@@ -61,3 +61,20 @@ footer {
     width: 100%;
     bottom: 0;
 }
+/* Estilos para el contenedor de la imagen con marco */
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #0073e6; /* Color del marco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efecto de profundidad */
+    padding: 10px; /* Espacio entre la imagen y el marco */
+    background-color: #fff; /* Color de fondo del marco */
+}
+
