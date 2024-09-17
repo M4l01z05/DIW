@@ -1,74 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asociación de Jugadores de TFT de Paiporta</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="images/logo.png" type="image/png"> <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="header-container">
-            
             <img src="images/logo.png" alt="Logo de APTP" class="logo">
-
-            <img src="images/paitft.png" alt="Logo de APTP" class="logo" style= "height: 175px; width: 500px;">
-       
-            <nav>
+            <nav class="main-nav">
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#Composiciones">Composiciones</a></li>
                     <li><a href="#eventos">Eventos</a></li>
                     <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#Tutoriales">Aprende a jugar</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div class="container">
-        <section id="inicio">
-            <h2>Bienvenidos a la APTP</h2>
-            <p>¡Hola, estrategas de Paiporta! Somos la Asociación de Jugadores de TFT de Paiporta (APTP), una comunidad dedicada a los entusiastas de Teamfight Tactics (TFT) en nuestra localidad. Nuestro objetivo es reunir a jugadores apasionados para compartir estrategias, participar en torneos locales y disfrutar del juego en un ambiente amistoso y competitivo.</p>
-        </section>
-
-        <section id="sobre-nosotros">
-            <h2>¿Qué es Teamfight Tactics?</h2>
-            <p>Teamfight Tactics es un juego de auto-battler desarrollado por Riot Games, en el que los jugadores compiten en una serie de rondas automáticas usando una combinación de unidades, objetos y estrategias para superar a sus oponentes. Cada partida es una prueba de táctica y adaptabilidad, ¡y nos encanta!</p>
-        </section>
-        <section>
+    <main class="container">
+        <!-- Sección de bienvenida -->
+        <section id="inicio" class="section">
+            <div class="text-container">
+                <h1>Bienvenidos a Paitft</h1>
+                <p>¡Hola, estrategas de Paiporta! Somos la Asociación de Jugadores de TFT de Paiporta (APTP), una comunidad dedicada a los entusiastas de Teamfight Tactics (TFT) en nuestra localidad. Nuestro objetivo es reunir a jugadores apasionados para compartir estrategias, participar en torneos locales y disfrutar del juego en un ambiente amistoso y competitivo.</p>
+            </div>
             <div class="image-container">
-                <img src="images/maxresdefault.jpg" alt="Imagen Destacada">
+                <img src="images/paitft.png" alt="Imagen ilustrativa">
             </div>
         </section>
-        <section>
-            <h2>Nuestra Misión</h2>
-            <ul>
-                <li>Fomentar la Comunidad: Conectar a jugadores locales que comparten la pasión por TFT.</li>
-                <li>Organizar Eventos: Desde torneos amistosos hasta sesiones de entrenamiento y visualización en grupo.</li>
-                <li>Mejorar Habilidades: Ofrecer talleres, estrategias y análisis para ayudar a nuestros miembros a mejorar en el juego.</li>
-                <li>Crear un Espacio Inclusivo: Asegurarnos de que todos los jugadores, sin importar su nivel, se sientan bienvenidos.</li>
-            </ul>
+
+        <!-- Sección sobre TFT -->
+        <section id="sobre-nosotros" class="section">
+            <div class="image-container">
+                <img src="images/maxresdefault.jpg" alt="Imagen de Teamfight Tactics">
+            </div>
+            <div class="text-container">
+                <h2>¿Qué es Teamfight Tactics?</h2>
+                <p>Teamfight Tactics es un juego de auto-battler desarrollado por Riot Games, en el que los jugadores compiten en una serie de rondas automáticas usando una combinación de unidades, objetos y estrategias para superar a sus oponentes. Cada partida es una prueba de táctica y adaptabilidad, ¡y nos encanta!</p>
+            </div>
         </section>
 
-        <section>
-            <h2>¿Cómo Unirse?</h2>
-            <p>¡Es fácil ser parte de nuestra comunidad! Solo sigue estos pasos:</p>
-            <a href="https://discord.gg/PtRF97Wz" class="btn">Únete a Nuestro Discord</a>
+        <!-- Sección de la misión -->
+        <section id="mision" class="section">
+            <div class="text-container">
+                <h2>Nuestra Misión</h2>
+                <ul class="mission-list">
+                    <li>Fomentar la Comunidad: Conectasample3.jpgr a jugadores locales que comparten la pasión por TFT.</li>
+                    <li>Organizar Eventos: Desde torneos amistosos hasta sesiones de entrenamiento y visualización en grupo.</li>
+                    <li>Mejorar Habilidades: Ofrecer talleres, estrategias y análisis para ayudar a nuestros miembros a mejorar en el juego.</li>
+                    <li>Crear un Espacio Inclusivo: Asegurarnos de que todos los jugadores, sin importar su nivel, se sientan bienvenidos.</li>
+                </ul>
+            </div>
+            <div class="image-container">
+                <img src="images/maxresdefault.jpg" alt="Imagen sobre la misión de la APTP">
+            </div>
         </section>
 
-        <section>
-            <h2>Nuestros Eventos</h2>
-            <ul class="event-list">
-                <li><strong>Torneo Mensual:</strong> Competencias regulares para poner a prueba tus habilidades y ganar premios.</li>
-                <li><strong>Sesiones de Entrenamiento:</strong> Workshops y sesiones de juego para mejorar tus tácticas y estrategias.</li>
-                <li><strong>Reuniones Sociales:</strong> Encuentros casuales para conocer a otros jugadores y disfrutar del juego juntos.</li>
-            </ul>
+        <!-- Sección de cómo unirse -->
+        <section id="como-unirse" class="section">
+            <div class="image-container">
+                <img src="images/disc.png" alt="Únete a Discord">
+            </div>
+            <div class="text-container">
+                <h2>¿Cómo Unirse?</h2>
+                <p>¡Es fácil ser parte de nuestra comunidad! Solo sigue estos pasos:</p>
+                <a href="https://discord.gg/PtRF97Wz" class="btn btn-discord">Únete a Nuestro Discord</a>
+            </div>
         </section>
-    </div>
+
+        <!-- Sección de eventos -->
+        <section id="eventos" class="section ">
+            <div class="text-container">
+                <h2>Nuestros Eventos</h2>
+                <ul class="event-list">
+                    <li><strong>Torneo Mensual:</strong> Competencias regulares para poner a prueba tus habilidades y ganar premios.</li>
+                    <li><strong>Sesiones de Entrenamiento:</strong> Workshops y sesiones de juego para mejorar tus tácticas y estrategias.</li>
+                    <li><strong>Reuniones Sociales:</strong> Encuentros casuales para conocer a otros jugadores y disfrutar del juego juntos.</li>
+                </ul>
+            </div>
+            <div class="image-container">
+                <img src="images/torneos.jpg" alt="Eventos de la APTP">
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Asociación de Jugadores de TFT de Paiporta. Todos los derechos reservados.</p>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Sobre Nosotros</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-nosotros">Quiénes Somos</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Eventos</h3>
+                <ul>
+                    <li><a href="#eventos">Torneos</a></li>
+                    <li><a href="#eventos">Sesiones de Entrenamiento</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="#contacto">Formulario</a></li>
+                    <li><a href="#contacto">Redes Sociales</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Asociación de Jugadores de TFT de Paiporta. Todos los derechos reservados.</p>
+        </div>
     </footer>
 </body>
+
 </html>
