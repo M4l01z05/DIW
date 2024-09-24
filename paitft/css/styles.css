@@ -7,7 +7,6 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: rgb(200,170,110);
     background: linear-gradient(90deg, rgba(200,170,110,1) 0%, rgba(126,66,199,1) 46%, rgba(0,212,255,1) 100%);
     color: #333;
     padding: 20px;
