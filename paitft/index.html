@@ -13,19 +13,28 @@
 <body>
     <header>
         <div class="header-container">
-            <img src="images/logo.png" alt="Logo de APTP" class="logo">
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#Composiciones">Composiciones</a></li>
-                    <li><a href="#eventos">Eventos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#Tutoriales">Aprende a jugar</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="composiciones.html">Composiciones</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="tutoriales.html">Aprende a jugar</a></li>
                 </ul>
             </nav>
+            <div class="dropdown">
+                <button class="dropbtn">Inicio de sesión</button>
+                <div class="dropdown-content">
+                    <a href="#">Iniciar sesión</a>
+                    <a href="#">Registrarse</a>
+                    <a href="#">Tus torneos</a>
+                    <a href="#">Tus composiciones</a>
+                    <a href="#">Tus entrenamientos</a>
+                    <a href="#">Tu rendimiento</a>
+                </div>
+            </div>
         </div>
     </header>
-
+    
     <main class="container">
         <!-- Sección de bienvenida -->
         <section id="inicio" class="section">
@@ -68,7 +77,7 @@
         <!-- Sección de cómo unirse -->
         <section id="como-unirse" class="section">
             <div class="image-container">
-                <img src="images/disc.png" alt="Únete a Discord">
+                <img src="images/disc.png" alt="Únete a Discord" style="max-width: 400px;">
             </div>
             <div class="text-container">
                 <h2>¿Cómo Unirse?</h2>

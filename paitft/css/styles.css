@@ -1,0 +1,251 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(200,170,110);
+    background: linear-gradient(90deg, rgba(200,170,110,1) 0%, rgba(126,66,199,1) 46%, rgba(0,212,255,1) 100%);
+    color: #333;
+    padding: 20px;
+}
+
+/* Cabecera */
+header {
+    background-color: #1f2f44;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Asegura que los elementos estén distribuidos */
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que el contenido se ajuste en pantallas pequeñas */
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+.banner {
+    height: 175px;
+    width: 500px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Asegura que el menú esté centrado */
+    flex-wrap: wrap; /* Permite que el menú se ajuste en pantallas pequeñas */
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+}
+
+.main-nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    background-color: #0073e6;
+    border-radius: 5px;
+}
+
+/* Sección alternante */
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap; /* Permite que el contenido se ajuste en pantallas pequeñas */
+}
+
+.text-container, .image-container {
+    width: 100%;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .text-container, .image-container {
+        width: 50%; /* Solo se dividen en columnas en pantallas grandes */
+    }
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 500px; /* Asegura que todas las imágenes tengan el mismo tamaño máximo */
+    height: auto;
+    border: 5px solid #0073e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+/* Listas con recuadros */
+.mission-list, .event-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.mission-list li, .event-list li {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    color: #ffffff;
+    background-color: #0073e6;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005bb5;
+}
+
+.btn-discord {
+    background-color: #7289DA;
+}
+
+.btn-discord:hover {
+    background-color: #5a73bd;
+}
+
+/* Footer */
+footer {
+    background-color: #1f2f44;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .footer-column {
+        width: 30%;
+    }
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    font-size: 14px;
+}
+
+/* Media Queries para Pantallas Pequeñas */
+@media (max-width: 767px) {
+    .banner {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-nav ul {
+        flex-direction: column; /* El menú se apila en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .main-nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .section {
+        flex-direction: column; /* La sección alternante se apila verticalmente */
+    }
+
+    .text-container, .image-container {
+        width: 100%;
+    }
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #081e97;
+}
+.dropbtn {
+    background-color: #597cf0; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Bordes redondeados */
+}
