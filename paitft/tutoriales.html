@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoriales de TFT - Asociación de Jugadores de TFT de Paiporta</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: rgb(200,170,110);
+            background: linear-gradient(90deg, rgba(200,170,110,1) 0%, rgba(126,66,199,1) 46%, rgba(0,212,255,1) 100%);
+            color: #333;
+            line-height: 1.6;
+            
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        p {
+            margin: 15px 0;
+            font-size: 1.1em;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Estilos para las secciones */
+        .section {
+            margin-bottom: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para los desplegables con <details> */
+        details {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 18px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: 0.4s;
+        }
+
+        details[open] {
+            background-color: #34495e;
+        }
+
+        details summary {
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        details[open] summary {
+            font-weight: bold;
+        }
+
+        details summary::-webkit-details-marker {
+            display: none; /* Elimina el triángulo por defecto en algunos navegadores */
+        }
+
+        .panel {
+            background-color: #7289DA;
+            border-radius: 10px;
+            margin-top: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .panel p {
+            margin: 15px 0;
+        }
+
+        /* Botones morados tipo TFT */
+        .btn {
+            display: inline-block;
+            background-color: #7E42C7; /* Morado estilo TFT */
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #8A2BE2; /* Morado más claro para el hover */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="composiciones.html">Composiciones</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="tutoriales.html">Aprende a jugar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="introduccion" class="section">
+            <h1>Introducción a Teamfight Tactics</h1>
+            <p>Teamfight Tactics (TFT) es un juego de estrategia donde los jugadores forman un equipo de campeones que luchan automáticamente contra otros equipos. Durante la partida, debes combinar campeones, sinergias y objetos de forma estratégica para derrotar a tus oponentes y ser el último en pie. ¡Cada partida es un desafío diferente que pondrá a prueba tus habilidades de táctica y adaptabilidad!</p>
+        </section>
+        <img src="images/mini1.png" alt="Imagen izquierda" class="image-left">
+        <img src="images/mini2.png" alt="Imagen izquierda" class="image-right">
+        <img src="images/mini3.png" alt="Imagen izquierda" class="image-right">
+        <img src="images/mini4.png" alt="Imagen izquierda" class="image-right">
+        
+        <!-- Desplegable 1: Sinergias -->
+        <section id="sinergias" class="section">
+            <h2>Sinergias en TFT</h2>
+            <p>Las sinergias son uno de los aspectos más importantes del juego. Cada campeón pertenece a una clase y origen, y cuando tienes una cantidad específica de campeones de la misma clase u origen, desbloqueas poderosas bonificaciones que mejoran tu equipo.</p>
+            <details>
+                <summary>Ver más sobre Sinergias</summary>
+                <div class="panel">
+                    <h3>¿Qué son las Sinergias?</h3>
+                    <p>En TFT, los campeones pertenecen a varias <strong>clases</strong> y <strong>orígenes</strong>. Por ejemplo, algunos campeones pueden ser "Guerreros" y "Dragones". Al reunir suficientes campeones del mismo tipo, activas bonificaciones que mejoran tus probabilidades de ganar las rondas.</p>
+                    <p>Las sinergias son clave porque te permiten crear combinaciones estratégicas que pueden darte una ventaja decisiva en las batallas.</p>
+
+                    <h3>Tipos de Sinergias</h3>
+                    <ul>
+                        <li><strong>Orígenes:</strong> Los campeones que comparten el mismo origen reciben beneficios. Ejemplo: Al tener 3 "Dragones", obtendrás resistencia mágica extra.</li>
+                        <li><strong>Clases:</strong> Las clases te permiten especializar a tus campeones. Ejemplo: Los "Guerreros" reciben bonificaciones en su daño físico al tener 3 o más en el equipo.</li>
+                    </ul>
+                </div>
+            </details>
+        </section>
+
+        <!-- Desplegable 2: Economía y Gestión del Oro -->
+        <section id="economia" class="section">
+            <h2>Economía y Gestión del Oro</h2>
+            <p>La economía es el núcleo de cualquier estrategia ganadora en TFT. Saber cómo y cuándo gastar tu oro es crucial para ganar las partidas, ya que determinará tu capacidad de mejorar tu equipo.</p>
+            <details>
+                <summary>Ver más sobre Economía</summary>
+                <div class="panel">
+                    <h3>¿Cómo gestionar tu oro de manera eficiente?</h3>
+                    <p>Recibes oro al final de cada ronda, pero la cantidad depende de tu rendimiento. Aquí tienes algunos consejos clave:</p>
+                    <ul>
+                        <li><strong>Intereses:</strong> Por cada 10 de oro que guardes, recibirás 1 de oro adicional por ronda, hasta un máximo de 5.</li>
+                        <li><strong>Rachas:</strong> Ganas oro extra si logras mantener una racha de victorias o derrotas consecutivas.</li>
+                        <li><strong>Subir de nivel:</strong> Invertir en tu nivel te permitirá desplegar más campeones en el tablero, pero no gastes oro sin control; equilibra la inversión en campeones y niveles.</li>
+                    </ul>
+
+                    <h3>Estrategias Económicas</h3>
+                    <ul>
+                        <li><strong>Estrategia de Ahorro:</strong> Ahorrar hasta 50 de oro para maximizar tus intereses y luego usarlo para mejorar tu equipo en momentos clave.</li>
+                        <li><strong>Estrategia Agresiva:</strong> Gastar oro de inmediato para mejorar tus campeones rápidamente y mantener una racha de victorias.</li>
+                    </ul>
+                </div>
+            </details>
+        </section>
+
+        <!-- Desplegable 3: Objetos y su Uso -->
+        <section id="objetos" class="section">
+            <h2>Objetos en TFT</h2>
+            <p>Los objetos son fundamentales para mejorar a tus campeones. Los obtienes de rondas PvE (contra monstruos) o del carrusel de campeones. Cada objeto básico puede combinarse para crear objetos más poderosos.</p>
+            <details>
+                <summary>Ver más sobre Objetos</summary>
+                <div class="panel">
+                    <h3>¿Cómo funcionan los objetos?</h3>
+                    <p>Los objetos en TFT pueden combinarse. Dos objetos básicos forman un objeto avanzado con efectos únicos. Por ejemplo:</p>
+                    <ul>
+                        <li><strong>Espada del Rey Arruinado:</strong> Se obtiene combinando una Espada de Granizo y un Arco Curvo. Aumenta el daño de ataque y velocidad de ataque.</li>
+                        <li><strong>Reloj de Arena:</strong> Combinación de Vara de las Edades y Chaleco de Zarzas para aumentar la resistencia mágica y provocar aturdimientos en los enemigos.</li>
+                    </ul>
+                    <h3>Distribuir Objetos</h3>
+                    <p>Es crucial dar los objetos correctos a los campeones indicados. Por ejemplo, un tanque debe recibir objetos que aumenten su vida o resistencia, mientras que los campeones de daño deben tener objetos que potencien su ataque o habilidades.</p>
+                </div>
+            </details>
+        </section>
+
+        <!-- Desplegable 4: Posicionamiento -->
+        <section id="posicionamiento" class="section">
+            <h2>Posicionamiento en TFT</h2>
+            <p>El posicionamiento en el tablero puede marcar la diferencia entre una victoria y una derrota. Ajusta la colocación de tus campeones cada ronda para adaptarte a los equipos enemigos.</p>
+            <details>
+                <summary>Ver más sobre Posicionamiento</summary>
+                <div class="panel">
+                    <h3>Consejos de Posicionamiento</h3>
+                    <ul>
+                        <li><strong>Tanques al frente:</strong> Coloca a tus campeones con mayor vida y resistencia en la primera línea para absorber el daño.</li>
+                        <li><strong>Daño detrás:</strong> Los campeones que infligen mucho daño pero son frágiles deben colocarse en la parte trasera.</li>
+                        <li><strong>Habilidades de área:</strong> Posiciona a tus campeones para que puedan afectar a la mayor cantidad de enemigos posible.</li>
+                    </ul>
+                </div>
+            </details>
+        </section>
+
+        <!-- Desplegable 5: Aumentos -->
+        <section id="aumentos" class="section">
+            <h2>Aumentos en TFT</h2>
+            <p>Los aumentos son una característica clave de TFT que ofrecen poderosas mejoras para tu equipo y afectan tu estrategia durante toda la partida.</p>
+            <details>
+                <summary>Ver más sobre Aumentos</summary>
+                <div class="panel">
+                    <h3>¿Qué son los Aumentos?</h3>
+                    <p>Los aumentos son ventajas únicas que se ofrecen a lo largo de la partida. Cada jugador puede elegir entre tres aumentos cada cierto número de rondas, y estos pueden variar desde mejoras a tus campeones, sinergias, oro extra, hasta opciones más creativas.</p>
+                    <h3>Tipos de Aumentos</h3>
+                    <ul>
+                        <li><strong>Aumentos de Sinergia:</strong> Mejoran directamente una de tus sinergias, como "Guerreros tienen +30% de daño de ataque adicional".</li>
+                        <li><strong>Aumentos de Objetos:</strong> Te permiten obtener más objetos o potenciar aquellos que ya has equipado.</li>
+                        <li><strong>Aumentos de Economía:</strong> Ofrecen beneficios económicos como más oro por ronda o intereses mejorados.</li>
+                    </ul>
+                </div>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Asociación de Jugadores de TFT de Paiporta. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
