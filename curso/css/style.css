@@ -1,50 +1,81 @@
-body{
-    
-
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: red;
+    background-repeat: no-repeat;
+    height: 700px;
+    background-size: cover;
+    width: 900px;
+    background: linear-gradient(to top, white, red);
+    align-items: center;
 }
-.cabecera{
-    background-color: #3d3847;
-    height:10% ;
+
+header {
+    /* Encabezado de la página */
+    background: linear-gradient(blue, rgb(64, 191, 241));
+    height: 10%;
     border-bottom: solid black 5px;
     display: flex;
     align-items: center;
 }
-.cabecera2{
-    background-image: url(../imgs/red015.jpg);
-    height:20% ;
+
+nav {
+    /* Barra de navegación */
+    background-color: rgb(241, 200, 14);
+    height: 20%;
     align-items: center;
     display: flex;
     justify-content: space-around;
     padding: 5px;
-    
+}
 
-    
+.sub2 {
+    /* Clase adicional utilizada para agrupar elementos con alineación centrada */
+    align-items: center;
 }
-.sub2{
-  align-items: center;
-}
-.sub3{
+
+article {
+    /* Estilo para los artículos individuales */
+    text-align: center;
+    font-size: 12px;
+    margin: 30px;
+    padding: 5px;
     background-color: white;
-    
-
+    width: 200px;
+    height: 300px;
+    border-image: url(../imgs/movil.png);
+    border-width: 45px 20px 45px 20px;
+    border-image-slice: 45 20 45 20;
+    border-style: solid;
 }
 
-.cuerpo{
-    background-image: url(../imgs/lgrey008.jpg);
-    height:60% ;
+article h3 {
+    /* Estilo para los encabezados (h3) dentro de los artículos */
+    
+}
+
+article img {
+    /* Estilo para las imágenes dentro de los artículos */
+    max-width: 75%;
+}
+
+main {
+    /* Contenedor principal de la página */
+    background-color: white;
+    height: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
-.footer{
-    height:10% ;
-    background-color: #3d3847;
-    border-top: solid #3d3847 5px;
+
+footer {
+    /* Pie de página */
+    border-top: 10px solid black;
+    color: white;
+    height: 50px;
+    background: linear-gradient(blue, rgb(64, 191, 241));
+    text-align: center;
+    padding: 15px;
 }
-.principal{
-    background-image: url(../imgs/old_map.png);
-    height: 700px;
-    width: 900px;
-    padding: 20px;
-}
+
+
