@@ -1,156 +1,152 @@
 /* General Styles */
 body {
-    background-color: #5BA3A5;
-    font-family: Arial, sans-serif;
+    background-color: #5BA3A5; /* Color de fondo general de la página */
+    font-family: Arial, sans-serif; /* Fuente general para todo el texto */
 }
 
 .content {
-    background-color: #F7F9FA;
-    width: 700px;
-    margin: auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    background-color: #F7F9FA; /* Fondo de la caja principal */
+    width: 700px; /* Ancho fijo de la caja */
+    margin: auto; /* Centra la caja horizontalmente */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Sombra alrededor */
 }
+
 header{
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid black; /* Línea negra debajo del encabezado */
 }
 
 header h1 {
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 20px;
+    text-align: center; /* Texto centrado */
+    font-size: 20px; /* Tamaño de fuente del título */
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
 }
 
 footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 12px;
-    color: #666;
-    border-top: 2px solid black;
-    
+    text-align: center; /* Texto centrado */
+    margin-top: 20px; /* Espacio superior */
+    font-size: 12px; /* Tamaño de fuente pequeño */
+    color: #666; /* Color de texto gris oscuro */
+    border-top: 2px solid black; /* Línea negra encima del pie de página */
 }
 
 /* Block Styles */
 .block {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: flex; /* Distribuye las cajas en fila */
+    justify-content: space-between; /* Espaciado equitativo entre cajas */
+    flex-wrap: wrap; /* Permite que las cajas se ajusten a nuevas líneas si es necesario */
 }
 
 /* Caja Styles */
 .caja {
-    text-align: center;
-    padding: 10px;
-    font-weight: bold;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center; /* Texto centrado en la caja */
+    padding: 10px; /* Espacio interno en todas las direcciones */
+    font-weight: bold; /* Texto en negrita */
+    margin: 10px; /* Margen alrededor de cada caja */
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Alinea contenido horizontalmente al centro */
+    align-items: center; /* Alinea contenido verticalmente al centro */
 }
 
-/* Caja 1: Redondeo especial */
+/* Caja 1: Redondeo especial de bordes */
 .caja1 {
-    border: 2px solid black;
-    border-radius: 50px 60px 20px 100px;
-    width: 150px;
-    height: 30px;
+    border: 2px solid black; /* Borde negro */
+    border-radius: 50px 60px 20px 100px; /* Bordes redondeados personalizados */
+    width: 150px; /* Ancho fijo */
+    height: 30px; /* Alto fijo */
 }
 
-/* Caja 2: Cuadrada sin bordes redondeados */
+/* Caja 2: Caja cuadrada sin bordes redondeados */
 .caja2 {
-    border: 2px solid gray;
-    width: 150px;
-    height: 30px;
-
+    border: 2px solid gray; /* Borde gris */
+    width: 150px; /* Ancho fijo */
+    height: 30px; /* Alto fijo */
 }
 
-/* Caja 3: Círculo alargado horizontalmente con gradiente blanco a azul de arriba hacia abajo */
+/* Caja 3: Caja con gradiente de blanco a azul, bordes redondeados */
 .caja3 {
-    background: linear-gradient(to bottom, white, #0052D4);
-    border-radius: 25px;
-    width: 150px;
-    height: 30px;
-    border: 2px solid gray;
-    color: white;
+    background: linear-gradient(to bottom, white, #0052D4); /* Gradiente de arriba hacia abajo */
+    border-radius: 25px; /* Bordes redondeados */
+    width: 150px; /* Ancho fijo */
+    height: 30px; /* Alto fijo */
+    border: 2px solid gray; /* Borde gris */
+    color: white; /* Texto en color blanco */
 }
 
-/* Caja 4: Círculo alargado con gradiente de dentro hacia afuera, blanco en el centro, azul en el borde */
+/* Caja 4: Caja con gradiente interno (de centro blanco a borde azul) */
 .caja4 {
     background-color: white; /* Fondo blanco */
     border-radius: 25px; /* Bordes redondeados */
-    width: 150px;
-    height: 30px;
-    box-shadow: inset 0px 0px 25px rgba(0, 82, 212, 0.5); /* Sombra azul interior */
-    display: flex; /* Centrar contenido */
-    justify-content: center;
-    align-items: center;
+    width: 150px; /* Ancho fijo */
+    height: 30px; /* Alto fijo */
+    box-shadow: inset 0px 0px 25px rgba(0, 82, 212, 0.5); /* Sombra interior de color azul */
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
 }
 
-
-/* Caja 5: Círculo alargado sin más detalles */
+/* Caja 5: Caja con bordes redondeados, sin otros detalles */
 .caja5 {
-    border-radius: 25px;
-    width: 150px;
-    height: 30px;
-
-    border: 2px solid gray;
+    border-radius: 25px; /* Bordes redondeados */
+    width: 150px; /* Ancho fijo */
+    height: 30px; /* Alto fijo */
+    border: 2px solid gray; /* Borde gris */
 }
 
-/* Caja 6: Igual que Caja 2 (cuadrada) */
+/* Caja 6: Igual que Caja 2, cuadrada sin bordes redondeados */
 .caja6 {
-    border: 2px solid gray;
-    width: 150px;
-    height: 30px;
-
+    border: 2px solid gray; /* Borde gris */
+    width: 150px; /* Ancho fijo */
+    height: 30px; /* Alto fijo */
 }
 
-/* Caja 7: Sombra en el div y bordes redondeados */
+/* Caja 7: Caja con sombra exterior y bordes redondeados */
 .caja7 {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; /* Fondo blanco */
     border-radius: 25px; /* Bordes redondeados */
-    box-shadow: 5px 5px 10px;
-    width: calc(100% - 40px);
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid gray;
+    box-shadow: 5px 5px 10px; /* Sombra exterior */
+    width: calc(100% - 40px); /* Ancho calculado (relativo a contenedor) */
+    height: 50px; /* Alto fijo */
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    border: 2px solid gray; /* Borde gris */
 }
 
-/* Caja 8: Div normal con bordes redondeados */
+/* Caja 8: Caja básica con bordes redondeados */
 .caja8 {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; /* Fondo blanco */
     border-radius: 25px; /* Bordes redondeados */
-    width: calc(100% - 40px);
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid gray;
+    width: calc(100% - 40px); /* Ancho calculado (relativo a contenedor) */
+    height: 50px; /* Alto fijo */
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    border: 2px solid gray; /* Borde gris */
 }
 
-/* Caja 9: Letras con sombra y bordes redondeados */
+/* Caja 9: Caja con sombra en el texto y bordes redondeados */
 .caja9 {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; /* Fondo blanco */
     border-radius: 25px; /* Bordes redondeados */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra en el texto */
-    width: calc(100% - 40px);
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid gray;
+    width: calc(100% - 40px); /* Ancho calculado (relativo a contenedor) */
+    height: 50px; /* Alto fijo */
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    border: 2px solid gray; /* Borde gris */
 }
 
-/* Caja 10: Gradiente de blanco a azul de izquierda a derecha y bordes redondeados */
+/* Caja 10: Gradiente de izquierda a derecha con bordes redondeados */
 .caja10 {
     background: linear-gradient(to right, white, #0052D4); /* Gradiente de izquierda a derecha */
-    border-radius: 25px; 
-    width: calc(100% - 40px);
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid gray;
+    border-radius: 25px; /* Bordes redondeados */
+    width: calc(100% - 40px); /* Ancho calculado (relativo a contenedor) */
+    height: 50px; /* Alto fijo */
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    border: 2px solid gray; /* Borde gris */
 }

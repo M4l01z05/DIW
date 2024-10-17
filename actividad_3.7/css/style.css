@@ -1,0 +1,144 @@
+/*
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+ul {
+    list-style-type: none;
+    position: relative;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 80px;
+    padding: 20px 0;
+    position: relative;
+}
+
+ul li ul {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    width: 300px;
+    text-align: center;
+    margin-left: -100px;
+    font-family: Verdana;
+    height: 0px;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul li {
+    background-color: gray;
+    border-radius: 20%;
+}
+
+ul li ul li a {
+    color: white;
+}
+*/
+/* Elimina márgenes y rellenos predeterminados de todos los elementos */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Estilos para los elementos de lista (li) dentro de un menú (ul) */
+ul li {
+    color: blue; /* Color de texto azul */
+}
+
+/* Estilos para la lista no ordenada (ul) */
+ul {
+    position: relative; /* Necesario para posicionar los submenús */
+    list-style-type: none; /* Elimina las viñetas predeterminadas */
+    display: inline-block; /* Hace que los elementos de lista se alineen horizontalmente */
+    padding-block: 20px; /* Espaciado en la parte superior e inferior */
+    padding-inline: 0px; /* Elimina el relleno de los lados izquierdo y derecho */
+    margin-block: 0px; /* Elimina el margen superior e inferior */
+    margin-inline: 80px; /* Margen a la izquierda y derecha */
+}
+
+/* Estilos para los submenús (ul dentro de li) */
+ul li ul {
+    position: absolute; /* Posicionamiento absoluto para los submenús */
+    z-index: 2; /* Asegura que los submenús estén encima de otros elementos */
+    width: 100px; /* Ancho del submenú */
+    text-align: center; /* Centra el texto */
+    left: 50%; /* Posiciona el submenú en el centro del elemento principal */
+    margin-left: -50px; /* Ajuste para centrar el submenú */
+    top: 25px; /* Desplazamiento hacia abajo */
+    font-family: Verdana; /* Fuente Verdana */
+    font-size: 0.7em; /* Tamaño de fuente reducido */
+}
+
+/* Oculta inicialmente los elementos del submenú */
+ul li ul li {
+    max-height: 0px; /* Hace que el submenú esté invisible */
+    overflow: hidden; /* Oculta cualquier contenido que desborde */
+}
+
+/* Muestra los elementos del submenú cuando se pasa el cursor sobre el elemento principal */
+ul li:hover > ul li {
+    max-height: 150px; /* Establece una altura para hacer visible el submenú */
+    overflow: visible; /* Permite que los elementos del submenú sean visibles */
+    transition: .4s linear; /* Agrega una transición suave */
+}
+
+/* Estilo para los elementos del submenú cuando el cursor pasa sobre ellos */
+ul li:hover > ul li {
+    padding: 12px; /* Añade espacio alrededor de los elementos */
+    background-color: #444; /* Fondo gris oscuro */
+}
+
+/* Estilo para el primer elemento del submenú cuando se pasa el cursor */
+ul li:hover > ul li:nth-child(1) {
+    background-color: #363636; /* Fondo más oscuro para el primer elemento */
+}
+
+/* Estilo para los elementos del submenú cuando el cursor pasa sobre ellos */
+ul li:hover > ul li:hover {
+    background-color: #313131; /* Fondo aún más oscuro cuando se pasa sobre un elemento */
+}
+
+/* Bordes redondeados para el primer y último elemento del submenú */
+ul li:hover ul li:first-child {
+    position: relative; /* Posición relativa para usar border-radius */
+    border-radius: 3px 3px 0px 0px; /* Bordes redondeados solo en la parte superior */
+}
+
+ul li:hover ul li:last-child {
+    position: relative; /* Posición relativa para usar border-radius */
+    border-radius: 0px 0px 3px 3px; /* Bordes redondeados solo en la parte inferior */
+}
+
+/* Estilo para los enlaces dentro de los elementos del submenú */
+ul li ul li a {
+    color: aliceblue; /* Color del texto en el submenú */
+    text-decoration-line: none; /* Elimina el subrayado del enlace */
+}
+
+/* Estilos adicionales para el primer elemento del submenú (flecha hacia abajo) */
+nav li ul:hover li:first-child:before {
+    content: ' '; /* Crea un pseudo-elemento vacío */
+    position: absolute; /* Posiciona la flecha absolutamente */
+    width: 1px; /* Establece el ancho de la flecha */
+    height: 1px; /* Establece la altura de la flecha */
+    border: 5px solid transparent; /* Crea una flecha transparente */
+    border-bottom-color: #313131; /* Establece el color de la flecha */
+    left: 50%; /* Centra la flecha horizontalmente */
+    top: -10px; /* Desplaza la flecha hacia arriba */
+    margin-left: -5px; /* Ajuste para centrar la flecha */
+}
