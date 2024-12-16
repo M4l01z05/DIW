@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Luckiest+Guy&display=swap');
+
 body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(to top, white, red);
+    justify-content: center;
+    display: flex;
+    font-family: 'Abel', sans-serif; /* Fuente por defecto para el cuerpo */
+}
+.principal{
+    width: 900px;
+    height: 750px;
     margin: 0;
     padding: 20px;
-    background-color: red;
-    background-repeat: no-repeat;
-    height: 700px;
-    background-size: cover;
-    width: 900px;
-    background: linear-gradient(to top, white, red);
-    align-items: center;
 }
-
 header {
     /* Encabezado de la página */
     background: linear-gradient(blue, rgb(64, 191, 241));
@@ -32,6 +36,8 @@ nav {
 .sub2 {
     /* Clase adicional utilizada para agrupar elementos con alineación centrada */
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 article {
@@ -52,6 +58,9 @@ article {
 article h3 {
     /* Estilo para los encabezados (h3) dentro de los artículos */
     
+}
+header, nav {
+    font-family: 'Luckiest Guy', sans-serif;
 }
 
 article img {
@@ -79,3 +88,232 @@ footer {
 }
 
 
+/* Estilo para la chincheta */
+.chincheta {
+    width: 35px;
+    height: 49px;
+    background-image: url('../imgs/chincheta.png'); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover;
+    position: absolute;
+    top: -45px;
+    z-index: 0; /* Para que quede sobre los artículos */
+    position: relative;
+    margin: -25px;
+}
+
+/* Posición específica de cada chincheta */
+article:nth-of-type(1) .chincheta {
+    left: 165px;
+}
+
+article:nth-of-type(2) .chincheta {
+    left: 110px;
+}
+
+article:nth-of-type(3) .chincheta {
+    left: 40px;
+}
+
+
+/* Rotación de los artículos */
+article:nth-of-type(1) {
+    transform: rotate(-2deg);
+}
+
+article:nth-of-type(3) {
+    transform: rotate(2deg);
+}
+
+
+/* Estilos para la lista no ordenada (ul) */
+ul {
+    position: relative; /* Necesario para posicionar los submenús */
+    list-style-type: none; /* Elimina las viñetas predeterminadas */
+    display: inline-block; /* Hace que los elementos de lista se alineen horizontalmente */
+    padding-inline: 0px; /* Elimina el relleno de los lados izquierdo y derecho */
+    margin-block: 0px; /* Elimina el margen superior e inferior */
+    margin-inline: 80px; /* Margen a la izquierda y derecha */
+}
+
+/* Estilos para los submenús (ul dentro de li) */
+ul li ul {
+    position: absolute; /* Posicionamiento absoluto para los submenús */
+    z-index: 2; /* Asegura que los submenús estén encima de otros elementos */
+    width: 100px; /* Ancho del submenú */
+    text-align: center; /* Centra el texto */
+    left: 50%; /* Posiciona el submenú en el centro del elemento principal */
+    margin-left: -50px; /* Ajuste para centrar el submenú */
+    top: 60px; /* Desplazamiento hacia abajo */
+    font-family: Verdana; /* Fuente Verdana */
+    font-size: 0.7em; /* Tamaño de fuente reducido */
+}
+
+/* Oculta inicialmente los elementos del submenú */
+ul li ul li {
+    max-height: 0px; /* Hace que el submenú esté invisible */
+    overflow: hidden; /* Oculta cualquier contenido que desborde */
+}
+
+/* Muestra los elementos del submenú cuando se pasa el cursor sobre el elemento principal */
+ul li:hover > ul li {
+    max-height: 150px; /* Establece una altura para hacer visible el submenú */
+    overflow: visible; /* Permite que los elementos del submenú sean visibles */
+    transition: .4s linear; /* Agrega una transición suave */
+}
+
+/* Estilo para los elementos del submenú cuando el cursor pasa sobre ellos */
+ul li:hover > ul li {
+    padding: 12px; /* Añade espacio alrededor de los elementos */
+    background-color: #eb8d4e; /* Fondo gris oscuro */
+}
+
+/* Estilo para los elementos del submenú cuando el cursor pasa sobre ellos */
+ul li:hover > ul li:hover {
+    background-color: #f77700; /* Fondo aún más oscuro cuando se pasa sobre un elemento */
+}
+
+/* Bordes redondeados para el primer y último elemento del submenú */
+ul li:hover ul li:first-child {
+    position: relative; /* Posición relativa para usar border-radius */
+    border-radius: 3px 3px 0px 0px; /* Bordes redondeados solo en la parte superior */
+}
+
+ul li:hover ul li:last-child {
+    position: relative; /* Posición relativa para usar border-radius */
+    border-radius: 0px 0px 3px 3px; /* Bordes redondeados solo en la parte inferior */
+}
+
+/* Estilo para los enlaces dentro de los elementos del submenú */
+ul li ul li a {
+    color: aliceblue; /* Color del texto en el submenú */
+    text-decoration-line: none; /* Elimina el subrayado del enlace */
+}
+
+/* Estilos adicionales para el primer elemento del submenú (flecha hacia abajo) */
+nav li ul:hover li:first-child:before {
+    content: ' '; /* Crea un pseudo-elemento vacío */
+    position: absolute; /* Posiciona la flecha absolutamente */
+    width: 1px; /* Establece el ancho de la flecha */
+    height: 1px; /* Establece la altura de la flecha */
+    border: 5px solid transparent; /* Crea una flecha transparente */
+    border-bottom-color: #313131; /* Establece el color de la flecha */
+    left: 50%; /* Centra la flecha horizontalmente */
+    top: -10px; /* Desplaza la flecha hacia arriba */
+    margin-left: -5px; /* Ajuste para centrar la flecha */
+}
+ul li{
+
+}
+#barra {
+    width: 705px;
+    margin: 5px auto;
+    height: 16px;
+    padding: 2px;
+    border: 1px solid #CCCCCC;
+    background: #EEEEEE;
+    position: relative;
+}
+
+#progreso {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: rgba(0, 0, 150, 0.2);
+}
+#ajustes input[type="button"] {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    background-color: #FF6347; /* Tomato color for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    
+}
+#ajustes {
+    display: flex; /* Activamos flexbox */
+    flex-direction: column; /* Configuramos los elementos de ajustes en columna */
+    align-items: center; /* Centramos los elementos horizontalmente */
+    justify-content: center; /* Centramos los elementos verticalmente */
+    margin-top: 20px; /* Añadimos un margen superior para separar de los demás contenidos */
+}
+
+nav input[type="button"]:hover {
+    background-color: #FF4500; /* Darker shade on hover */
+}
+nav a {
+    text-shadow: 2px 2px 0px #f06529; /* Sombra para los enlaces en estado normal */
+    color: #FFFFFF; /* Cambia el color del texto para mejorar la visibilidad */
+    text-decoration: none; /* Elimina subrayado */
+}
+
+nav a:hover {
+    text-shadow: 0px 0px 5px #ff7e42; /* Sombra para los enlaces en estado hover */
+    color: #FFFFFF; /* Mantén el color blanco al pasar el cursor */
+}
+@keyframes rotarLogo {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  #logo {
+    animation: rotarLogo 5s infinite;
+  }
+  @keyframes mueveChincheta1 {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 199px;
+    }
+  }
+  
+  @keyframes mueveChincheta2 {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 120px;
+    }
+  }
+  
+  @keyframes mueveChincheta3 {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 30px;
+    }
+  }
+  
+  @keyframes animArticle1 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-2deg);
+    }
+  }
+  
+  @keyframes animArticle3 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(2deg);
+    }
+  }
+  
+  .article {
+    transition: transform 0.5s;
+  }

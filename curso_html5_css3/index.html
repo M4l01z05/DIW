@@ -10,33 +10,47 @@
 <body>
     <div class="principal">
         <header>
-            <img src="imgs/logo.png" alt="Libro" style ="padding: 15px;">
+            <img src="imgs/logo.png" alt="Libro" id="logo" style ="padding: 15px;">
             <h2 style="color: white;">CURSO DE HTML 5 Y CSS3</h2>
         </header>
         <nav>
             <div class="sub2">
                 <img src="imgs/book.png" alt="">
-                <h2 style="color:rgb(255, 255, 255)">contenidos</h2>
+                <h2 style="color:rgb(255, 255, 255)"><a href="index.html" style="text-decoration: none; color: inherit;">Contenidos</a></h2>
             </div>
             <div class="sub2">
-                <img src="imgs/film.png" alt="">
-                <h2 style="color:rgb(255, 255, 255)">Videos</h2>
+                <img src="imgs/film.png" alt="" >
+                <ul>
+                    <li>
+                        <h2 style="color:rgb(255, 255, 255)"><a href="videos.html" style="text-decoration: none; color: inherit;">Videos</a></h2> 
+                        <ul>
+                            <li><a >Video 1</a></li>
+                            <li><a >Video 2</a></li>
+                            <li><a >Video 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
             <div class="sub2">
                 <img src="imgs/mail.png" alt="">
-                <h2 style="color:rgb(255, 255, 255)">contacto</h2>
+                <h2 style="color:rgb(255, 255, 255)"><a href="contacto.html" style="text-decoration: none; color: inherit;">Contacto</a></h2>
             </div>
         </nav>
         <main>
             <article>
+                <div class="chincheta" id="chincheta1"></div>
                 <img src="imgs/html5.png" alt="">
                 <h3>HTML5</h3><span>Veremos los nuevos <b>elementos estructurales</b>, así como los nuevos elementos existentes para <b> formularios, audio y video.</b> <br> El nuevo <b> elemento canvas</b> nos abre un mundo de posibilidades en el <b> desarrollo de videojuegos</b> web.</span>
             </article>
             <article>
+                <div class="chincheta" id="chincheta2"></div>
+                    
                 <img src="imgs/css3.png" alt="">
                 <h3>CSS3</h3><span>Mejoraremos nuestros diseños web utilizando las nuevas características de CSS3: <b> efectos, transformaciones, animaciones</b>, etc. <br> Con <b>CSS3</b> nuestros diseños serán más simples, pero no menos impactantes.</span>
             </article>
             <article>
+
+                <div class="chincheta" id="chincheta3"></div>
                 <img src="imgs/javascript.png" alt="">
                 <h3>Javascript</h3><span>Junto con HTML5 aparecen nuevas API javascript que nos aportan multitud de facilidades y posibilidades en el desarrollo de nuestros proyectos web. <br> Con las nuevas <b> API javascript</b> nuestras manos dejarán de estar atadas.</span>
             </article>
@@ -44,6 +58,7 @@
         <footer>
             <p>Diseño de interfaces web - 2DAW</p>
         </footer>
+        <script src="js/javascript.js"></script>
     </div>
 </body>
 </html>

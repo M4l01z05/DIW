@@ -1,0 +1,100 @@
+/* Estilos del formulario */
+.container {
+    margin: 20px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-top: 2px solid #888;
+    border-bottom: 2px solid #888;
+    width: 810px;
+    text-align: center;
+    background-image: url('../imgs/bg-form.png');
+    background-position: center;
+    background-size: cover;
+}
+
+/* Título del formulario */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    position: relative;
+    background-image: url('../imgs/bgformtitleleft.png'), url('../imgs/bg-formtitle-right.png');
+    background-position: left, right;
+    background-size: 100px auto;
+    background-repeat: no-repeat;
+    font-family: 'AcknowledgementMedium', sans-serif;
+}
+
+/* Lista sin viñetas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Elementos de la lista */
+li {
+    margin-bottom: 15px;
+}
+
+/* Etiquetas y inputs */
+label {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'LeagueGothic', sans-serif;
+}
+
+/* Estilos de los inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="date"],
+input[type="number"],
+input[type="range"] {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    
+}
+
+/* Estilo del botón de envío */
+button {
+    background: radial-gradient(circle, rgb(144, 144, 144), rgb(72, 72, 72));
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: Tahoma, Geneva, sans-serif;
+    border: none;
+    border-radius: 5px;
+    opacity: 0.8;
+    transition: opacity 0.25s linear;
+    padding: 10px 20px;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+/* Selección de texto */
+::selection {
+    background-color: #484848;
+    color: #fff;
+    text-shadow: none;
+}
+
+input:invalid {
+    background: url('../imgs/invalid.png') no-repeat right;
+    background-size: 20px;
+}
+
+/* Validación de campos */
+input:required {
+    background: url('../imgs/required.png') no-repeat right;
+    background-size: 20px;
+}
+
+input:valid {
+    background: url('../imgs/valid.png') no-repeat right;
+    background-size: 20px;
+}
+
