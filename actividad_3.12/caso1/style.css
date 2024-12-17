@@ -1,0 +1,15 @@
+.bloques {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.bloque {
+  width: 150px;
+  margin: 10px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+

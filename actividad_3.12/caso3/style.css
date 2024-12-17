@@ -1,0 +1,54 @@
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite reorganizarse */
+    flex-direction: row; /* Disposición en columnas */
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    flex: 1; /* Ocupa espacio equitativo */
+}
+
+main {
+    background-color: #f4f4f4;
+    padding: 20px;
+    flex: 2; /* Sección principal más ancha */
+}
+
+aside {
+    background-color: #ddd;
+    padding: 20px;
+    flex: 1; /* Sección secundaria */
+}
+
+footer{
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Contenedor en cascada: vertical */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Cascada vertical */
+    }
+
+    nav, main, aside {
+        width: 100%; /* Ocupan todo el ancho disponible */
+    }
+}

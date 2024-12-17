@@ -1,0 +1,29 @@
+.bloques {
+    display: flex; /* Alinea horizontalmente */
+    
+    flex-wrap: wrap; /* Permite el salto de línea */
+   
+
+}
+
+/* Bloques individuales */
+.bloque {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Media query para pantallas menores de 800px */
+@media (max-width: 800px) {
+    .bloques {
+        display: block; /* Los bloques se apilan */
+    }
+
+    .bloque {
+        display: block; /* Cada bloque se comporta como un bloque */
+        width: auto; /* Se adapta al espacio disponible */
+        margin: 20px; /* Margen a los lados */
+    }
+}
