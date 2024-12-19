@@ -317,3 +317,71 @@ nav a:hover {
   .article {
     transition: transform 0.5s;
   }
+  /* Primera media query: Ancho máximo 1024px */
+@media (max-width: 1024px) {
+  .principal {
+      width: 90%;
+      min-width: 320px;
+      min-height: 100vh; /* Aseguramos que la altura mínima sea la del viewport */
+  }
+
+  header {
+      font-size: 0.7em;
+  }
+
+  nav ul li {
+      margin: 0 8% 2% 8%;
+  }
+}
+
+/* Segunda media query: Ancho máximo 700px */
+@media (max-width: 700px) {
+  .principal {
+      width: 100%;
+      min-width: 320px;
+      min-height: 100vh; /* Altura mínima igual a la del viewport */
+  }
+
+  nav ul li {
+      margin: 0 4% 1% 4%;
+  }
+}
+
+/* Tercera media query: Ancho máximo 475px */
+@media (max-width: 475px) {
+  .principal {
+      width: 100%;
+      min-width: 320px;
+      min-height: 100vh; /* Altura mínima igual a la del viewport */
+  }
+
+  /* Ocultar el menú y configurar el enlace */
+  nav ul {
+      display: none;
+  }
+
+  nav a {
+      display: block;
+      background-image: url('imgs/menu.png'); /* Ruta al icono del menú */
+      background-repeat: no-repeat;
+      background-position: center 10px;
+      width: 80px;
+      height: 80px;
+      margin: 0 auto;
+  }
+
+  /* Mostrar el menú cuando esté desplegado */
+  nav ul.desplegado {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #333;
+  }
+
+  nav ul li {
+      margin: 0;
+      padding: 10px 0;
+      width: 100%;
+      text-align: center;
+  }
+}

@@ -1,106 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
-
-main {
-    background: url('../imgs/fondoForm.jpg') no-repeat center center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#contenedorFormulario {
-    position: relative;
-    display: flex;
-    margin: 100px;
-    width: 600px;
-    padding: 20px 50px;
-    background: rgba(200, 200, 200, 0.7);
-    text-align: left;
-    box-shadow: 3px 0px 8px rgba(0, 0, 0, 0.4);
-}
-
-#contenedorFormulario h1 {
-    position: absolute;
-    top: -16px;
-    left: 490px;
-    background: rgba(255, 255, 255, 0.7);
-    font-family: 'Aguafina Script', cursive;
-    color: #333;
-    letter-spacing: 5px;
-    padding: 0px 10px;
-    text-shadow: 0px 0px 2px #777;
-}
-
-/* Estilos comunes para los campos del formulario */
-#contenedorFormulario input[type="text"],
-#contenedorFormulario input[type="email"],
-#contenedorFormulario textarea {
-    display: inline-block;
-    border: 1px solid #e5e5e5;
-    box-shadow: 3px 0px 8px rgba(0, 0, 0, 0.4);
-    color: #000;
-    font-weight: bold;
-    padding: 1px 45px 1px 4px;
-    margin-bottom: 10px;
-    transition: all 0.4s ease-in;
-    background: rgba(200, 200, 200, 0.7);
-}
-
-/* Campos nombre y correo */
-#contenedorFormulario input[type="text"],
-#contenedorFormulario input[type="email"] {
-    height: 32px;
-    width: 330px;
-}
-
-#contenedorFormulario input:focus {
-    width: 370px;
-    box-shadow: 0px 0px 12px rgba(255, 255, 255, 1);
-}
-
-/* Campo mensaje */
-#contenedorFormulario textarea {
-    font-family: Arial, sans-serif;
-    font-size: 1em;
-    width: 90%;
-    height: 150px;
-}
-
-/* Botón enviar */
-#contenedorFormulario button {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #434343;
-    color: #fff;
-    background: linear-gradient(to bottom, #5e5e5e, #2a2a2a);
-    cursor: pointer;
-    box-shadow: inset 0px 1px 1px #353535;
-    transition: all 0.3s ease;
-}
-
-#contenedorFormulario button:hover {
-    background: linear-gradient(to top, #5e5e5e, #2a2a2a);
-}
-/* Requeridos con asterisco */
-#contenedorFormulario input:required + label::after {
-    content: '*';
-    color: red;
-    margin-left: 4px;
-}
-/* #contenedorFormulario input:invalid + label::after {
-    background: url('../imgs/invalid.png') no-repeat center center;
-    background-size: 30px;
-    width: 30px;
-    height: 30px;
-}
-
-
-#contenedorFormulario input:valid + label::after {
-    background: url('../imgs/valid.png') no-repeat center center;
-    background-size: 30px;
-    width: 30px;
-    height: 30px;
-} */
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Luckiest+Guy&display=swap');
 
 body {
@@ -420,3 +317,41 @@ nav a:hover {
   .article {
     transition: transform 0.5s;
   }
+  #reproductor {
+    display: inline-block; /* Mostramos como bloque en línea */
+    width: 95%; /* Ancho relativo */
+    max-width: 720px; /* Ancho máximo */
+    margin: 20px auto; /* Márgenes superiores e inferiores de 20px, laterales automáticos */
+}
+
+/* Estilos para el elemento <video> */
+video {
+    width: 95%; /* Ancho relativo */
+    max-width: 720px; /* Ancho máximo */
+    height: auto; /* Alto automático */
+    margin: 5px; /* Márgenes externos de 5px */
+}
+
+/* Barra de navegación del reproductor */
+#ajustes {
+    display: inline-block; /* Mostramos como bloque en línea */
+    float: none; /* Eliminamos la flotación */
+    vertical-align: top; /* Alineación vertical hacia arriba */
+    margin: 0 auto; /* Márgenes laterales automáticos */
+}
+
+/* Estilos para #barra */
+#barra {
+    width: 95%; /* Ancho relativo */
+    max-width: 705px; /* Ancho máximo */
+    margin: 0 auto; /* Eliminamos márgenes internos */
+}
+
+/* @media query para tamaño máximo de 970 píxeles */
+@media (max-width: 970px) {
+    #ajustes input[type="button"] {
+        display: block; /* Mostramos los botones como bloques en línea */
+        width: 100%; /* Ancho completo para cada botón */
+        margin: 10px 0; /* Separación entre botones */
+    }
+}
