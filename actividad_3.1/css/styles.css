@@ -1,30 +1,80 @@
-/* Estilos generales de la tabla */
-table {
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-family: Arial;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; 
 }
 
-th, td {
-    border: 1px solid #333;
-    padding: 5px;
+.contenedor {
+    width: 700px;
+    margin: 0 auto; /** para ponerlo en medio **/
+    background-color: rgb(230, 230, 230); 
+}
+
+.cabecera {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid ; /** la linea de la cabecera **/
+    margin: 10px;
+
+}
+.menu-blog {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.cuerpo {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.posts {
+    width: 65%;
+}
+
+.post {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.contenido-post {
+    background-color: #c2c2c2; 
+    padding: 10px;
+}
+
+.titulo-post {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.lateral {
+    width: 30%;
+    margin-top: 40px;
+}
+
+.archivo, .acerca-de {
+    margin-bottom: 20px;
+}
+
+
+.pie {
     text-align: center;
+    padding: 10px ;
+    font-size: 17px;
+    border-top: 1px solid ; 
+    margin: 10px;
+}
+ul, li {
+    margin: 0;
+    list-style: none; 
 }
 
-/* Estilos para la cabecera */
-.Cabecera-top {
-    background-image: url('../img/fondo_gris.gif');
-}
 
-.Cabecera-lat {
-    background-color: #E6F3FF;
-}
-
-/* Estilos para las filas */
-tr:nth-child(even) {
-    background-color: #FFFFCC;
-}
-
-tr:hover {
-    background-color: #FFFF66;
+h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    
 }
