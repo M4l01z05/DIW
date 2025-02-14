@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [class*="col-"] {
+            
+            border: 5px solid rgb(255, 255, 255);
+        }
+        .claro {
+            background-color: rgb(0, 252, 239);
+            height: 70px; 
+            
+        }
+        .azul {
+            background-color: rgb(4, 0, 252);
+            height: 100px; 
+        }
+        .naranja {
+            background-color: rgb(252, 151, 0);
+           height: 170px;
+           
+        }
+        .gris {
+            background-color: rgba(99, 98, 98, 0.103);
+            height: 50px;
+        }
+        .verde {
+            background-color: rgb(0, 252, 13);
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-12 verde">header </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 offset-md-3 col-sm-3 col-6 azul">1</div>
+            <div class="col-md-3 col-sm-3 col-6 azul">2</div>
+        
+            <div class="w-100 d-none d-md-block"> </div>
+            <div class="col-md-3 col-sm-3 col-6 azul">3</div>
+            <div class="col-md-3 offset-md-6 col-sm-3 col-6 azul">4</div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12 order-md-5 col-sm-12 col-12 order-sm-1 d-none d-sm-block d-md-none claro">tablet</div>
+            <div class="col-md-3 order-md-1 col-sm-3 col-6 order-sm-5 gris">d</div>
+            <div class="col-md-3 order-md-2 col-sm-3 col-6 order-sm-4 gris">c</div>
+            <div class="col-md-3 order-md-3 col-sm-3 col-6 order-sm-3 gris">b</div>
+            <div class="col-md-3 order-md-4 col-sm-3 col-6 order-sm-2 gris">a</div>
+            <div class="col-md-12 order-md-5 col-sm-12 col-12 d-none d-md-block claro">Desktop</div>
+            <div class="col-md-12 order-md-5 col-sm-12 col-12 order-5 d-block d-sm-none claro">mobile</div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 offset-md-3 order-md-1 col-sm-6 order-sm-2 d-none d-sm-block naranja">:( </div>
+            <div class="col-md-3 order-md-2 col-sm-6 order-sm-1 col-12  naranja">:) </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-12 d-none d-sm-block verde">footer</div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colapsable en Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Barra lateral -->
+        <div class="bg-dark text-white p-3 vh-100" style="width: 250px;">
+            <h4>Bootstrap Componentes</h4>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="button.html">Botones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="card.html">Tarjetas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="carousel.html">Carrusel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="collapse.html">Colapsable</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="navbar.html">Navbar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="alerts.html">Alert</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="badge.html">Badge</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="breadcrumb.html">Breadcrumb</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="listgroup.html">Listgroup</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="modal.html">Modal</a>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Contenido principal -->
+        <div class="p-4 w-100">
+            <div class="container mt-4">
+                <h2>Ejemplo de Colapsable</h2>
+                <p>El componente colapsable de Bootstrap permite mostrar u ocultar contenido cuando se hace clic en un botón.</p>
+                
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#noticia" aria-expanded="false" aria-controls="noticia">
+                    Mostrar/Ocultar Noticia
+                </button>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#noticia" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Collapse con link
+                  </a>
+                <div class="collapse mt-3" id="noticia">
+                    <div class="card card-body">
+                        Esta es una noticia sobre el Valencia Basket. El equipo ha logrado una gran victoria en su último partido, demostrando su calidad y compromiso en la cancha.
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
