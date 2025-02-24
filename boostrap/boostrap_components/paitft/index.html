@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <!-- Hoja de estilos propia -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- FontAwesome (iconos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Fuente Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <nav class="navbar fixed-top">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="Logo" class="logo">
+                </a>
+                <button class="navbar-toggler rounded-circle p-2" type="button" id="menuToggler">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    
+        <div class="banner text-center text-white px-3">
+            <h1 class="display-3 mb-4">Domina el Tablero en TFT</h1>
+            <p class="fs-4 mx-auto" style="max-width: 600px;">Aprende estrategias, mejora tu juego y conviértete en el mejor jugador de Teamfight Tactics con nuestra comunidad.</p>
+        </div>
+    </div>
+    
+    <div class="menu-overlay d-flex align-items-center justify-content-center" id="menuOverlay">
+        <i class="fa-solid fa-xmark close-overlay position-absolute top-0 end-4 fs-1" id="closeOverlayBtn"></i>
+        <ul class="navbar-nav text-center">
+            <li class="nav-item py-3">
+                <a class="nav-link fs-3 d-flex align-items-center justify-content-center" href="#eventos">
+                    <i class="fa-solid fa-calendar-alt me-3"></i> Eventos
+                </a>
+            </li>
+            <li class="nav-item py-3">
+                <a class="nav-link fs-3 d-flex align-items-center justify-content-center" href="#noticias">
+                    <i class="fa-solid fa-newspaper me-3"></i> Noticias
+                </a>
+            </li>
+            <li class="nav-item py-3">
+                <a class="nav-link fs-3 d-flex align-items-center justify-content-center" href="#aprende">
+                    <i class="fa-solid fa-chess me-3"></i> Aprende a Jugar
+                </a>
+            </li>
+            <li class="nav-item py-3">
+                <a class="nav-link fs-3 d-flex align-items-center justify-content-center" href="#contacto">
+                    <i class="fa-solid fa-envelope me-3"></i> Contacto
+                </a>
+            </li>
+            <li class="nav-item py-3">
+                <a class="nav-link fs-3 d-flex align-items-center justify-content-center" href="#nosotros">
+                    <i class="fa-solid fa-users me-3"></i> Sobre Nosotros
+                </a>
+            </li>
+        </ul>
+    </div>
+  <!-- Sección con imagen a la izquierda y texto a la derecha (ejemplo adicional) -->
+  <div class="container-fluid section-tft">
+    <div class="row align-items-center gy-4">
+        <!-- Imagen a la izquierda -->
+        <div class="col-md-6 px-4">
+            <div class="image-container">
+                <img src="img/inicio/img-seccion1.jpg" alt="Imagen Sección 1" class="img-fluid">
+            </div>
+        </div>
+        <!-- Texto a la derecha -->
+        <div class="col-md-6">
+            <div class="px-4 px-lg-5">
+                <h2 class="mb-5">Bienvenidos a la Asociación Paiporta de Teamfight Tactics</h2>
+                <p class="mb-4">
+                    En la Asociación de Paiporta de TFT, compartimos estrategias, organizamos torneos
+                    y aprendemos juntos para dominar el tablero. ¡Únete y perfecciona tu técnica para
+                    convertirte en el mejor jugador de Teamfight Tactics!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="stats-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="stats-card">
+                    <i class="fas fa-users stats-icon"></i>
+                    <div class="stats-number">60+</div>
+                    <div class="stats-label">Afiliados</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stats-card">
+                    <i class="fas fa-trophy stats-icon"></i>
+                    <div class="stats-number">70+</div>
+                    <div class="stats-label">Premios</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stats-card">
+                    <i class="fas fa-gamepad stats-icon"></i>
+                    <div class="stats-number">100+</div>
+                    <div class="stats-label">Torneos</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="news-section">
+    <div class="container">
+        <h2 class="section-title">Últimas Noticias</h2>
+        <div class="row g-4">
+            <!-- Noticia 1 -->
+            <div class="col-lg-4 col-md-6">
+                <a href="noticia1.html" class="text-decoration-none">
+                    <div class="news-card">
+                        <div class="news-image-container">
+                            <img src="img/noticias/noticia1.jpg" alt="Noticia 1" class="news-image">
+                            <span class="news-category">Torneos</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">20 Febrero, 2025</div>
+                            <h3 class="news-title">Gran Torneo de TFT en Valencia</h3>
+                            <p class="news-description">
+                                Prepárate para el mayor evento de TFT del año. Más de 100 jugadores competirán por un premio extraordinario.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Noticia 2 -->
+            <div class="col-lg-4 col-md-6">
+                <a href="noticia2.html" class="text-decoration-none">
+                    <div class="news-card">
+                        <div class="news-image-container">
+                            <img src="img/noticias/noticia2.jpg" alt="Noticia 2" class="news-image">
+                            <span class="news-category">Guías</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">19 Febrero, 2025</div>
+                            <h3 class="news-title">Nueva Guía: Dominando el Meta</h3>
+                            <p class="news-description">
+                                Descubre las mejores composiciones y estrategias para dominar el meta actual de TFT.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Noticia 3 -->
+            <div class="col-lg-4 col-md-6">
+                <a href="noticia3.html" class="text-decoration-none">
+                    <div class="news-card">
+                        <div class="news-image-container">
+                            <img src="img/noticias/noticia3.jpg" alt="Noticia 3" class="news-image">
+                            <span class="news-category">Eventos</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">18 Febrero, 2025</div>
+                            <h3 class="news-title">Taller de Estrategia TFT</h3>
+                            <p class="news-description">
+                                Únete a nuestro taller presencial donde aprenderás las bases para mejorar tu juego.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-5 bg-light" id="torneos" style="background-color:lightgray !important;">
+    <div class="container py-5 bg-light" style="background-color:lightgray !important;">
+        <div class="row text-center mb-5">
+            <div class="col-12">
+                <h2 class="display-4 fw-bold">Nuestros Torneos</h2>
+                <div class="d-flex justify-content-center">
+                    <div style="width: 100px; height: 4px; background: linear-gradient(to right, #FF4E50, #4286f4);" class="rounded mb-4 mt-2"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <h3 class="fw-bold mb-4">Compite y Demuestra tu Talento</h3>
+                <p class="lead mb-4">
+                    En la Asociación Paiporta de TFT organizamos torneos regulares para jugadores de todos los niveles. 
+                    Desde eventos semanales amistosos hasta grandes competiciones con premios exclusivos.
+                </p>
+                
+                <div class="mb-4">
+                    <div class="d-flex align-items-start mb-4">
+                        <i class="fas fa-medal fs-3 text-danger me-3 mt-1"></i>
+                        <div>
+                            <h5 class="fw-bold">Torneos Semanales</h5>
+                            <p>Participa en nuestros eventos regulares para mejorar tus habilidades y conocer a la comunidad.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <i class="fas fa-trophy fs-3 text-danger me-3 mt-1"></i>
+                        <div>
+                            <h5 class="fw-bold">Competiciones Regionales</h5>
+                            <p>Representa a nuestra asociación en torneos oficiales contra otras comunidades de la Comunidad Valenciana.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <i class="fas fa-award fs-3 text-danger me-3 mt-1"></i>
+                        <div>
+                            <h5 class="fw-bold">Premios Exclusivos</h5>
+                            <p>Gana RP, skins exclusivas y merchandising oficial de Teamfight Tactics.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="#proximos-torneos" class="btn btn-danger btn-lg px-4 rounded-pill shadow">Ver Próximos Torneos</a>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="position-relative rounded overflow-hidden shadow">
+                    <img src="img/noticias/noticia1.jpg" alt="Torneo TFT" class="img-fluid w-100">
+                    <div class="position-absolute bottom-0 start-0 w-100 p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);">
+                        <h4 class="text-white text-center fw-bold mb-0">¡Únete a nuestros torneos!</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Logo y descripción -->
+            <div class="col-lg-4">
+                <div class="mb-4">
+                    <img src="img/logo.png" alt="Logo" class="img-fluid mb-3" style="max-height: 70px;">
+                    <p class="text-light">Asociación Paiporta de Teamfight Tactics - Tu comunidad para mejorar y disfrutar del juego.</p>
+                </div>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-white fs-5"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white fs-5"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white fs-5"><i class="fab fa-discord"></i></a>
+                    <a href="#" class="text-white fs-5"><i class="fab fa-twitch"></i></a>
+                </div>
+            </div>
+            
+            <!-- Enlaces del menú -->
+            <div class="col-lg-4">
+                <h5 class="mb-3">Enlaces</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a href="#eventos" class="text-decoration-none text-light">
+                            <i class="fa-solid fa-calendar-alt me-2"></i> Eventos
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#noticias" class="text-decoration-none text-light">
+                            <i class="fa-solid fa-newspaper me-2"></i> Noticias
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#aprende" class="text-decoration-none text-light">
+                            <i class="fa-solid fa-chess me-2"></i> Aprende a Jugar
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#contacto" class="text-decoration-none text-light">
+                            <i class="fa-solid fa-envelope me-2"></i> Contacto
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#nosotros" class="text-decoration-none text-light">
+                            <i class="fa-solid fa-users me-2"></i> Sobre Nosotros
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Información legal -->
+            <div class="col-lg-4">
+                <h5 class="mb-3">Información Legal</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a href="aviso-legal.html" class="text-decoration-none text-light">
+                            <i class="fa-solid fa-gavel me-2"></i> Aviso Legal
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="privacidad.html" class="text-decoration-none text-light">
+                            <i class="fa-solid fa-lock me-2"></i> Política de Privacidad
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="cookies.html" class="text-decoration-none text-light">
+                            <i class="fa-solid fa-cookie-bite me-2"></i> Política de Cookies
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="terminos.html" class="text-decoration-none text-light">
+                            <i class="fa-solid fa-file-contract me-2"></i> Términos y Condiciones
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <hr class="my-4 bg-secondary">
+        
+        <!-- Copyright -->
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="small text-light mb-0">
+                    &copy; 2025 Asociación Paiporta de Teamfight Tactics. Todos los derechos reservados.
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="small text-light mb-0">
+                    <a href="#" class="text-decoration-none text-light" data-bs-toggle="modal" data-bs-target="#cookiesModal">Configurar Cookies</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Modal para configuración de cookies -->
+<div class="modal fade" id="cookiesModal" tabindex="-1" aria-labelledby="cookiesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cookiesModalLabel">Configuración de Cookies</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Utilizamos cookies para mejorar su experiencia en nuestro sitio web. Puede elegir qué tipos de cookies desea aceptar.</p>
+                
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input" type="checkbox" id="cookieNecesarias" checked disabled>
+                    <label class="form-check-label" for="cookieNecesarias">
+                        <strong>Cookies Necesarias</strong> - Estas cookies son imprescindibles para el funcionamiento del sitio.
+                    </label>
+                </div>
+                
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input" type="checkbox" id="cookieRendimiento">
+                    <label class="form-check-label" for="cookieRendimiento">
+                        <strong>Cookies de Rendimiento</strong> - Nos ayudan a entender cómo interactúan los visitantes con el sitio.
+                    </label>
+                </div>
+                
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input" type="checkbox" id="cookiePublicidad">
+                    <label class="form-check-label" for="cookiePublicidad">
+                        <strong>Cookies de Publicidad</strong> - Utilizadas para mostrar anuncios relevantes.
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Guardar Preferencias</button>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- Bootstrap Bundle con Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript personalizado para manejar el overlay -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuToggler = document.getElementById('menuToggler');
+      const menuOverlay = document.getElementById('menuOverlay');
+      const closeOverlayBtn = document.getElementById('closeOverlayBtn');
+
+      // Abre/cierra el overlay al hacer clic en el botón hamburguesa
+      menuToggler.addEventListener('click', () => {
+        menuOverlay.classList.toggle('open');
+        document.body.classList.toggle('no-scroll');
+      });
+
+      // Cierra el overlay al hacer clic en el ícono X
+      closeOverlayBtn.addEventListener('click', () => {
+        menuOverlay.classList.remove('open');
+        document.body.classList.remove('no-scroll');
+      });
+    });
+  </script>
+</body>
+</html>

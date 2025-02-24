@@ -1,0 +1,106 @@
+/* ===================== */
+/* ESTILOS GENERALES     */
+/* ===================== */
+
+/* Fuente para la marca (Montserrat) */
+.brand-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  /* Ajustes para el logo */
+  #logo {
+    width: 40px;
+    height: auto;
+  }
+  
+  /* ===================== */
+  /* HEADER / HERO         */
+  /* ===================== */
+  
+  /* Header con imagen de fondo que ocupa el 75% de la pantalla */
+  .hero-header {
+    position: relative;
+    height: 100vh;
+    background: url('../img/bosque.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  
+  /* Navbar transparente */
+  .hero-header .navbar {
+    background: transparent !important;
+  }
+  
+  /* Gradient overlay (opcional, si deseas oscurecer la imagen) */
+  
+  
+  /* Contenido del banner (overlay) */
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  /* Título del banner en verde, con tipografía Oswald */
+  .banner-title {
+    font-family: 'Oswald', sans-serif;
+    color: #28a745;
+    font-size: 2.5rem;
+
+  }
+  
+  /* Descripción del banner en Oswald */
+  .banner-desc {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 1.125rem;
+    max-width: 800px;
+
+  }
+  
+  /* ===================== */
+  /* SECCIÓN DE ARTÍCULOS   */
+  /* ===================== */
+  
+  /* Título de la sección de artículos con fuente Lato */
+  .section-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  /* Fondo gris claro para la sección de artículos */
+  .bg-light-gray {
+    background-color: #f8f9fa;
+  }
+  
+  /* ===================== */
+  /* CONTACTO              */
+  /* ===================== */
+  
+  /* Sección de contacto con fondo diferenciado (light blue) */
+  .contact-section {
+    background-color: #ffffff;
+  }
+  
+  /* Estilo para "Tu nombre es" en el formulario */
+  .name-label {
+    font-size: 1.25rem;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  .carousel-item img {
+    width: 1200px;  /* Ancho fijo */
+    height: 400px;  /* Alto fijo */
+    object-fit: cover;
+  }
+  

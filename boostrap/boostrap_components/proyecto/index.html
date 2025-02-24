@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Responsiva - Maxi Axi</title>
+  <!-- Google Fonts: Oswald para el banner, Montserrat para la marca, Lato para artículos -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Montserrat:wght@600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- HEADER / HERO SECTION -->
+  <header class="hero-header">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <!-- Logo y marca -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="img/m.png" alt="Logo" id="logo" class="me-2">
+          <span class="brand-text">axi</span>
+        </a>
+        <!-- Botón toggler para móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menú de navegación con iconos -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link text-white" href="#"><i class="bi bi-house-door"></i> Inicio</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#"><i class="bi bi-bicycle"></i> Bicicletas</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#"><i class="bi bi-wrench"></i> Accesorios</a></li>
+            <li class="nav-item"><a class="nav-link text-white"  href="#"><i class="bi bi-puzzle"></i> Componentes</a></li>
+            <!-- Dropdown Productos -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-box-seam text-white"></i> Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-white" href="#">Sillines</a></li>
+                <li><a class="dropdown-item text-white" href="#">Cascos</a></li>
+                <li><a class="dropdown-item text-white" href="#">Tijas</a></li>
+              </ul>
+            </li>
+            <!-- Collapse para "Quiénes somos" -->
+            <li class="nav-item">
+              <a class="nav-link text-white" data-bs-toggle="collapse" href="#collapseQuienes" role="button" aria-expanded="false" aria-controls="collapseQuienes">
+                <i class="bi bi-people text-white"></i> Quiénes somos
+              </a>
+            </li>
+            <!-- Collapse para "Referencias" -->
+            <li class="nav-item">
+              <a class="nav-link text-white" data-bs-toggle="collapse" href="#collapseReferencias" role="button" aria-expanded="false" aria-controls="collapseReferencias">
+                <i class="bi bi-info-circle text-white"></i> Referencias
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- HERO BANNER: El header ocupa el 75% del alto de la pantalla -->
+    <div class="banner-overlay">
+      <h1 class="banner-title">Las mejores bicicletas del mercado</h1>
+      <p class="banner-desc">
+        Descubre la experiencia de calidad y estilo en nuestras bicicletas, con diseños vanguardistas y tecnología de última generación. Encuentra la bicicleta perfecta para tus aventuras urbanas y de montaña, y únete a la revolución del ciclismo.
+      </p>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- Secciones de collapse para "Quiénes somos" y "Referencias" -->
+    <section class="py-5 bg-light-gray">
+        <div class="container text-center">
+          <h2 class="section-title">Nuestros Artículos</h2>
+          <div class="row g-4 mt-4">
+            <!-- Artículo 1: Bicicletas -->
+            <div class="col-12 col-md-4">
+              <div class="card h-100">
+                <img src="img/bicis.jpg" class="card-img-top" alt="Bicicletas">
+                <div class="card-body">
+                  <h5 class="card-title">Bicicletas</h5>
+                  <p class="card-text">Explora nuestro catálogo de bicicletas.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Artículo 2: Accesorios -->
+            <div class="col-12 col-md-4">
+              <div class="card h-100">
+                <img src="img/accesorios.jpg" class="card-img-top" alt="Accesorios">
+                <div class="card-body">
+                  <h5 class="card-title">Accesorios</h5>
+                  <p class="card-text">Todo para completar tu equipamiento.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Artículo 3: Componentes -->
+            <div class="col-12 col-md-4">
+              <div class="card h-100">
+                <img src="img/componentes.jpg" class="card-img-top" alt="Componentes">
+                <div class="card-body">
+                  <h5 class="card-title">Componentes</h5>
+                  <p class="card-text">Personaliza tu bicicleta con calidad.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- CAROUSEL -->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- Slide 1: Bicicletas -->
+        <div class="carousel-item active" data-bs-interval="4000">
+          <img src="img/bicis.jpg" class="d-block w-100" alt="Bicicletas">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Bicicletas</h5>
+            <p>La mejor selección de bicicletas.</p>
+          </div>
+        </div>
+        <!-- Slide 2: Accesorios -->
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="img/accesorios.jpg" class="d-block w-100" alt="Accesorios">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-black">Accesorios</h5>
+            <p class="text-black">Completa tu equipamiento.</p>
+          </div>
+        </div>
+        <!-- Slide 3: Componentes -->
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="img/componentes.jpg" class="d-block w-100" alt="Componentes">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Componentes</h5>
+            <p>Piezas y repuestos de alta calidad.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+    <!-- ARTICLES -->
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <section class="py-5 contact-section">
+      <div class="container">
+        <h2 class="mb-4 text-center">Formulario de Contacto</h2>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8">
+            <form>
+              <!-- Línea "Tu nombre es ___" en la misma línea -->
+              <div class="mb-3 d-flex align-items-center">
+                <span class="form-label me-2 name-label">Tu nombre es</span>
+                <input type="text" class="form-control" placeholder="Ingresa tu nombre">
+              </div>
+              <div class="mb-3 d-flex align-items-center">
+                <span class="form-label me-2 name-label">Tu Correo es </span>
+                <input type="text" class="form-control" placeholder="ejemplo@ejemplo.com">
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-success">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center p-3">
+    &copy; 2025 Tu Nombre. Todos los derechos reservados.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
