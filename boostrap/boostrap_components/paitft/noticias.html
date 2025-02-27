@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias - Asociación Paiporta de Teamfight Tactics</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <!-- Hojas de estilos propias -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/noticias.css">
+
+  <!-- FontAwesome (iconos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Fuente Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar fixed-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo_blanco.webp" alt="Logo" class="logo">
+            </a>
+            <button class="navbar-toggler rounded-circle p-2" type="button" id="menuToggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menú overlay -->
+    <div class="menu-overlay d-flex align-items-center justify-content-center" id="menuOverlay">
+        <i class="fa-solid fa-xmark close-overlay position-absolute top-0 end-4 fs-1" id="closeOverlayBtn"></i>
+        <ul class="navbar-nav text-center">
+            <li class="nav-item py-3">
+                <a class="nav-link fs-3 d-flex align-items-center justify-content-center" href="eventos.html">
+                    <i class="fa-solid fa-calendar-alt me-3"></i> Eventos
+                </a>
+            </li>
+            <li class="nav-item py-3">
+                <a class="nav-link fs-3 d-flex align-items-center justify-content-center" href="noticias.html">
+                    <i class="fa-solid fa-newspaper me-3"></i> Noticias
+                </a>
+            </li>
+            <li class="nav-item py-3">
+                <a class="nav-link fs-3 d-flex align-items-center justify-content-center" href="contacto.html">
+                    <i class="fa-solid fa-envelope me-3"></i> Contacto
+                </a>
+            </li>
+            <li class="nav-item py-3">
+                <a class="nav-link fs-3 d-flex align-items-center justify-content-center" href="quienes-somos.html">
+                    <i class="fa-solid fa-users me-3"></i> Sobre Nosotros
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Banner principal con migas de pan -->
+    <div class="noticias-hero">
+        <img src="img/noticias/fondo-noticias.jpg" alt="Noticias TFT" class="noticias-hero-img">
+        <div class="hero-content">
+            <h1 class="text-white display-4 fw-bold mb-3">Noticias</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Noticias</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="container py-5">
+        <h2 class="noticias-title">Últimas Actualizaciones y Eventos</h2>
+        
+        <div class="row g-4">
+            <!-- Noticia 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="noticia-card h-100">
+                    <div class="noticia-img-container">
+                        <img src="img/noticias/noticia1.jpg" alt="Gran Torneo de TFT" class="noticia-img">
+                        <span class="noticia-category">Torneos</span>
+                    </div>
+                    <div class="noticia-content">
+                        <div class="noticia-date">
+                            <i class="far fa-calendar-alt"></i> 20 Febrero, 2025
+                        </div>
+                        <h3 class="noticia-title">Gran Torneo de TFT en Valencia</h3>
+                        <p class="noticia-excerpt">
+                            Prepárate para el mayor evento de TFT del año. Más de 100 jugadores competirán por un premio extraordinario de 5000€ en metálico y recompensas exclusivas del juego.
+                        </p>
+                        <a href="noticia1.html" class="noticia-btn">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noticia 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="noticia-card h-100">
+                    <div class="noticia-img-container">
+                        <img src="img/noticias/noticia2.jpg" alt="Nueva Guía" class="noticia-img">
+                        <span class="noticia-category">Guías</span>
+                    </div>
+                    <div class="noticia-content">
+                        <div class="noticia-date">
+                            <i class="far fa-calendar-alt"></i> 19 Febrero, 2025
+                        </div>
+                        <h3 class="noticia-title">Nueva Guía: Dominando el Meta Actual</h3>
+                        <p class="noticia-excerpt">
+                            Descubre las mejores composiciones y estrategias para dominar el meta actual de TFT. Nuestros expertos analizan las combinaciones más efectivas para el parche vigente.
+                        </p>
+                        <a href="noticia2.html" class="noticia-btn">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noticia 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="noticia-card h-100">
+                    <div class="noticia-img-container">
+                        <img src="img/noticias/noticia3.jpg" alt="Taller de Estrategia" class="noticia-img">
+                        <span class="noticia-category">Eventos</span>
+                    </div>
+                    <div class="noticia-content">
+                        <div class="noticia-date">
+                            <i class="far fa-calendar-alt"></i> 18 Febrero, 2025
+                        </div>
+                        <h3 class="noticia-title">Taller de Estrategia TFT para Principiantes</h3>
+                        <p class="noticia-excerpt">
+                            Únete a nuestro taller presencial donde aprenderás las bases para mejorar tu juego. Ideal para jugadores que quieren dar el salto al siguiente nivel.
+                        </p>
+                        <a href="noticia3.html" class="noticia-btn">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noticia 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="noticia-card h-100">
+                    <div class="noticia-img-container">
+                        <img src="img/noticias/noticia4.jpeg" alt="Nuevos Campeones" class="noticia-img">
+                        <span class="noticia-category">Actualizaciones</span>
+                    </div>
+                    <div class="noticia-content">
+                        <div class="noticia-date">
+                            <i class="far fa-calendar-alt"></i> 15 Febrero, 2025
+                        </div>
+                        <h3 class="noticia-title">Análisis de los Nuevos Campeones en TFT</h3>
+                        <p class="noticia-excerpt">
+                            Riot ha introducido tres nuevos campeones en el último parche. Analizamos sus habilidades, sinergias y cómo integrarlos en las mejores composiciones.
+                        </p>
+                        <a href="noticia4.html" class="noticia-btn">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noticia 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="noticia-card h-100">
+                    <div class="noticia-img-container">
+                        <img src="img/noticias/noticia5.jpeg" alt="Entrevista a Jugador" class="noticia-img">
+                        <span class="noticia-category">Entrevistas</span>
+                    </div>
+                    <div class="noticia-content">
+                        <div class="noticia-date">
+                            <i class="far fa-calendar-alt"></i> 12 Febrero, 2025
+                        </div>
+                        <h3 class="noticia-title">Entrevista con el Campeón Regional de TFT</h3>
+                        <p class="noticia-excerpt">
+                            Conversamos con Miguel Sánchez, campeón del último torneo regional, sobre sus estrategias, rutinas de entrenamiento y consejos para los jugadores aspirantes.
+                        </p>
+                        <a href="noticia5.html" class="noticia-btn">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noticia 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="noticia-card h-100">
+                    <div class="noticia-img-container">
+                        <img src="img/noticias/noticia6.jpeg" alt="Colaboración con Riot" class="noticia-img">
+                        <span class="noticia-category">Anuncios</span>
+                    </div>
+                    <div class="noticia-content">
+                        <div class="noticia-date">
+                            <i class="far fa-calendar-alt"></i> 10 Febrero, 2025
+                        </div>
+                        <h3 class="noticia-title">Nuestra Asociación Firma Colaboración con Riot Games</h3>
+                        <p class="noticia-excerpt">
+                            Nos complace anunciar que hemos firmado un acuerdo con Riot Games para ser organizadores oficiales de torneos TFT en la Comunidad Valenciana durante 2025.
+                        </p>
+                        <a href="noticia6.html" class="noticia-btn">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paginación -->
+        <div class="row mt-5">
+            <div class="col-12 d-flex justify-content-center">
+                <nav aria-label="Paginación de noticias">
+                    <ul class="pagination">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" aria-label="Anterior">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Siguiente">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Logo y descripción -->
+                <div class="col-lg-4">
+                    <div class="mb-4">
+                        <img src="img/logo_blanco.webp" alt="Logo" class="img-fluid mb-3" style="max-height: 70px;">
+                        <p class="text-light">Asociación Paiporta de Teamfight Tactics - Tu comunidad para mejorar y disfrutar del juego.</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white fs-5"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-twitch"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Enlaces del menú -->
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="index.html" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-home me-2"></i> Inicio
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#eventos" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-calendar-alt me-2"></i> Eventos
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="noticias.html" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-newspaper me-2"></i> Noticias
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#aprende" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-chess me-2"></i> Aprende a Jugar
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#contacto" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-envelope me-2"></i> Contacto
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#nosotros" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-users me-2"></i> Sobre Nosotros
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Información legal -->
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Información Legal</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="aviso-legal.html" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-gavel me-2"></i> Aviso Legal
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="privacidad.html" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-lock me-2"></i> Política de Privacidad
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="cookies.html" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-cookie-bite me-2"></i> Política de Cookies
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="terminos.html" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-file-contract me-2"></i> Términos y Condiciones
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-secondary">
+            
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-light mb-0">
+                        &copy; 2025 Asociación Paiporta de Teamfight Tactics. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small text-light mb-0">
+                        <a href="#" class="text-decoration-none text-light" data-bs-toggle="modal" data-bs-target="#cookiesModal">Configurar Cookies</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para configuración de cookies -->
+    <div class="modal fade" id="cookiesModal" tabindex="-1" aria-labelledby="cookiesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cookiesModalLabel">Configuración de Cookies</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Utilizamos cookies para mejorar su experiencia en nuestro sitio web. Puede elegir qué tipos de cookies desea aceptar.</p>
+                    
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" id="cookieNecesarias" checked disabled>
+                        <label class="form-check-label" for="cookieNecesarias">
+                            <strong>Cookies Necesarias</strong> - Estas cookies son imprescindibles para el funcionamiento del sitio.
+                        </label>
+                    </div>
+                    
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" id="cookieRendimiento">
+                        <label class="form-check-label" for="cookieRendimiento">
+                            <strong>Cookies de Rendimiento</strong> - Nos ayudan a entender cómo interactúan los visitantes con el sitio.
+                        </label>
+                    </div>
+                    
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" id="cookiePublicidad">
+                        <label class="form-check-label" for="cookiePublicidad">
+                            <strong>Cookies de Publicidad</strong> - Utilizadas para mostrar anuncios relevantes.
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Guardar Preferencias</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle con Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript personalizado para manejar el overlay -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggler = document.getElementById('menuToggler');
+            const menuOverlay = document.getElementById('menuOverlay');
+            const closeOverlayBtn = document.getElementById('closeOverlayBtn');
+
+            // Abre/cierra el overlay al hacer clic en el botón hamburguesa
+            menuToggler.addEventListener('click', () => {
+                menuOverlay.classList.toggle('open');
+                document.body.classList.toggle('no-scroll');
+            });
+
+            // Cierra el overlay al hacer clic en el ícono X
+            closeOverlayBtn.addEventListener('click', () => {
+                menuOverlay.classList.remove('open');
+                document.body.classList.remove('no-scroll');
+            });
+        });
+    </script>
+</body>
+</html>

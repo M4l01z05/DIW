@@ -1,0 +1,384 @@
+/* css/contacto.css */
+.contact-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), 
+                url('../img/fondo-contacto.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+.contact-header .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+.contact-header h1 {
+    font-weight: 800;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+.contact-header p {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    line-height: 1.6;
+}
+.contact-section {
+    padding: 6rem 0;
+    background-color: #f8f9fa;
+}
+.contact-form-container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    height: 100%;
+}
+.contact-form .form-control,
+.contact-form .form-select {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    border-color: #4286f4;
+    box-shadow: 0 0 0 0.25rem rgba(66, 134, 244, 0.25);
+}
+.contact-form .form-floating > label {
+    padding: 0.75rem 1.5rem;
+}
+.btn-contact {
+    background: linear-gradient(135deg, #FF4E50, #4286f4);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 78, 80, 0.3);
+}
+.btn-contact:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 78, 80, 0.4);
+}
+.privacy-link {
+    color: #4286f4;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.privacy-link:hover {
+    color: #FF4E50;
+    text-decoration: underline;
+}
+.contact-info {
+    background: linear-gradient(135deg, #111827, #1f2937);
+    color: white;
+    border-radius: 20px;
+    padding: 3rem;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.contact-info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(66, 0, 255, 0.05) 0%, rgba(255, 78, 80, 0.05) 100%);
+    pointer-events: none;
+}
+.section-title {
+    font-weight: 700;
+    color: inherit;
+    position: relative;
+    display: inline-block;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #FF4E50, #4286f4);
+    border-radius: 2px;
+}
+.contact-info .section-title::after {
+    background: linear-gradient(to right, #FF4E50, #4286f4);
+}
+.contact-card {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+.contact-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+}
+.contact-icon {
+    background: linear-gradient(135deg, #FF4E50, #4286f4);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+.contact-details h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.contact-details p {
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+/* Continuación de css/contacto.css */
+.social-links h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.social-icon {
+    background: rgba(255, 255, 255, 0.1);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: linear-gradient(135deg, #FF4E50, #4286f4);
+    transform: translateY(-5px);
+    color: white;
+}
+
+.map-section {
+    padding: 3rem 0;
+}
+
+.map-container {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section {
+    background-color: #f8f9fa;
+    padding: 6rem 0;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 10px !important;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-button {
+    padding: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    background-color: white;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background: linear-gradient(135deg, #4286f4, #FF4E50);
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+}
+
+.accordion-body {
+    padding: 1.5rem;
+    background-color: white;
+    line-height: 1.7;
+}
+
+/* Estilos para el menú overlay */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 1000;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-overlay.open {
+    height: 100%;
+}
+
+.close-overlay {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-overlay:hover {
+    transform: rotate(90deg);
+    color: #FF4E50;
+}
+
+.menu-overlay .nav-link {
+    color: white;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 0.5rem 2rem;
+}
+
+.menu-overlay .nav-link:hover {
+    color: #FF4E50;
+    transform: translateX(10px);
+}
+
+.menu-overlay .nav-link i {
+    transition: all 0.3s ease;
+}
+
+.menu-overlay .nav-link:hover i {
+    color: #4286f4;
+}
+
+/* Estilos responsivos */
+@media (max-width: 992px) {
+    .contact-form-container,
+    .contact-info {
+        padding: 2rem;
+    }
+    
+    .contact-header {
+        height: 50vh;
+    }
+    
+    .contact-header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-header {
+        height: 40vh;
+    }
+    
+    .contact-header h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-card {
+        padding: 1rem;
+    }
+    
+    .contact-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .accordion-button {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-header {
+        height: 30vh;
+    }
+    
+    .contact-section {
+        padding: 3rem 0;
+    }
+    
+    .faq-section {
+        padding: 3rem 0;
+    }
+    
+    .contact-form-container,
+    .contact-info {
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+    
+    .btn-contact {
+        width: 100%;
+    }
+}
+
+/* Añadimos estilos para el navbar */
+.navbar {
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.navbar-brand .logo {
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    width: 45px;
+    height: 45px;
+}
+
+.navbar-toggler-icon {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+/* Estilos para el estado del formulario */
+.form-control:focus,
+.form-select:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 78, 80, 0.25);
+}
+
+.form-check-input:checked {
+    background-color: #4286f4;
+    border-color: #4286f4;
+}
+
+/* Estilos para el cuerpo cuando el menú está abierto */
+body.no-scroll {
+    overflow: hidden;
+}

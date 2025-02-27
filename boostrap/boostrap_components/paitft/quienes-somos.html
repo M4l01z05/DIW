@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nosotros - PaiTFT</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <!-- Hoja de estilos propia -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/quienes-somos.css">
+
+  <!-- FontAwesome (iconos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Fuente Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar fixed-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Logo" class="logo">
+            </a>
+            <button class="navbar-toggler rounded-circle p-2" type="button" id="menuToggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Overlay del menú -->
+    <div class="menu-overlay d-flex align-items-center justify-content-center" id="menuOverlay">
+        <i class="fa-solid fa-xmark close-overlay position-absolute top-0 end-4 fs-1" id="closeOverlayBtn"></i>
+        <ul class="navbar-nav text-center">
+            <li class="nav-item py-3">
+                <a class="nav-link fs-3 d-flex align-items-center justify-content-center" href="eventos.html">
+                    <i class="fa-solid fa-calendar-alt me-3"></i> Eventos
+                </a>
+            </li>
+            <li class="nav-item py-3">
+                <a class="nav-link fs-3 d-flex align-items-center justify-content-center" href="noticias.html">
+                    <i class="fa-solid fa-newspaper me-3"></i> Noticias
+                </a>
+            </li>
+            <li class="nav-item py-3">
+                <a class="nav-link fs-3 d-flex align-items-center justify-content-center" href="contacto.html">
+                    <i class="fa-solid fa-envelope me-3"></i> Contacto
+                </a>
+            </li>
+            <li class="nav-item py-3">
+                <a class="nav-link fs-3 d-flex align-items-center justify-content-center" href="quienes-somos.html">
+                    <i class="fa-solid fa-users me-3"></i> Sobre Nosotros
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Banner principal -->
+    <div class="about-banner">
+        <div class="about-banner-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center text-white">
+                        <h1 class="display-3 fw-bold mb-4">Quiénes Somos</h1>
+                        <p class="fs-4 mx-auto" style="max-width: 700px;">Conoce la historia, misión y valores de la Asociación Paiporta de Teamfight Tactics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Nuestra Historia -->
+    <section class="history-section py-5">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">Nuestra Historia</h2>
+                    <div class="mb-4" style="width: 100px; height: 4px; background: linear-gradient(to right, #FF4E50, #4286f4);" class="rounded"></div>
+                    <p class="lead mb-4">
+                        PaiTFT nació en 2023 en el corazón de Paiporta, Valencia, como un pequeño grupo de amigos apasionados por Teamfight Tactics.
+                    </p>
+                    <p class="mb-4">
+                        Lo que comenzó como reuniones informales en un local del municipio, rápidamente se convirtió en una asociación oficial con una misión clara: crear la comunidad de TFT más grande y activa de España.
+                    </p>
+                    <p class="mb-4">
+                        Hoy, con orgullo paiportino, nos hemos expandido por toda la Comunidad Valenciana y estamos estableciendo sedes en las principales ciudades de España. Nuestro compromiso con la excelencia y la pasión por el juego nos ha llevado a convertirnos en referentes nacionales.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="history-image-container rounded shadow overflow-hidden">
+                        <img src="img/logo.png" alt="Historia de PaiTFT" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Misión y Visión -->
+    <section class="mission-section py-5">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold">Misión y Visión</h2>
+                    <div class="d-flex justify-content-center">
+                        <div style="width: 100px; height: 4px; background: linear-gradient(to right, #FF4E50, #4286f4);" class="rounded mb-4 mt-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="mission-card h-100">
+                        <div class="card-icon mb-4">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 class="fw-bold mb-3">Nuestra Misión</h3>
+                        <p>
+                            Fomentar la comunidad de jugadores de Teamfight Tactics en España, proporcionando un espacio donde los jugadores puedan crecer, mejorar sus habilidades y conectar con otros apasionados del juego.
+                        </p>
+                        <p>
+                            Organizamos torneos de alta calidad, creamos contenido educativo y promovemos un ambiente inclusivo donde jugadores de todos los niveles puedan sentirse bienvenidos.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mission-card h-100">
+                        <div class="card-icon mb-4">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 class="fw-bold mb-3">Nuestra Visión</h3>
+                        <p>
+                            Convertirnos en la comunidad de referencia para Teamfight Tactics en España y expandirnos internacionalmente, formando una red global de jugadores conectados por su pasión por el juego.
+                        </p>
+                        <p>
+                            Aspiramos a ser reconocidos por Riot Games como una comunidad oficial y representar a España en torneos internacionales, llevando el talento nacional a lo más alto.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Estadísticas -->
+    <section class="about-stats-section py-5">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold text-white">PaiTFT en Números</h2>
+                    <div class="d-flex justify-content-center">
+                        <div style="width: 100px; height: 4px; background: linear-gradient(to right, #FF4E50, #4286f4);" class="rounded mb-4 mt-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="about-stats-card text-center">
+                        <div class="stats-number">500+</div>
+                        <div class="stats-label">Afiliados</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="about-stats-card text-center">
+                        <div class="stats-number">120+</div>
+                        <div class="stats-label">Torneos</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="about-stats-card text-center">
+                        <div class="stats-number">8</div>
+                        <div class="stats-label">Sedes</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="about-stats-card text-center">
+                        <div class="stats-number">2</div>
+                        <div class="stats-label">Años de Historia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Equipo -->
+    <section class="team-section py-5">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold">Nuestro Equipo</h2>
+                    <div class="d-flex justify-content-center">
+                        <div style="width: 100px; height: 4px; background: linear-gradient(to right, #FF4E50, #4286f4);" class="rounded mb-4 mt-2"></div>
+                    </div>
+                    <p class="lead mb-0">Conoce a las personas que hacen posible PaiTFT</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="img/about/Persona3.jpg" alt="Fundador" class="img-fluid">
+                            <div class="team-social">
+                                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-twitch"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h4>Carlos Martínez</h4>
+                            <p>Fundador y Director</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="img/about/Persona1.jpg" alt="Competiciones" class="img-fluid">
+                            <div class="team-social">
+                                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-twitch"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h4>Laura Sánchez</h4>
+                            <p>Directora de Competiciones</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="img/about/Persona4.jpg" alt="Comunicación" class="img-fluid">
+                            <div class="team-social">
+                                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-twitch"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h4>Miguel López</h4>
+                            <p>Responsable de Comunicación</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="img/about/Persona2.jpg" alt="Eventos" class="img-fluid">
+                            <div class="team-social">
+                                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-twitch"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h4>Ana García</h4>
+                            <p>Coordinadora de Eventos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Logros -->
+    <section class="achievements-section py-5">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="achievement-image-container rounded shadow overflow-hidden">
+                        <img src="img/eventos/torneo7.jpg" alt="Logros de PaiTFT" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">Nuestros Logros</h2>
+                    <div class="mb-4" style="width: 100px; height: 4px; background: linear-gradient(to right, #FF4E50, #4286f4);" class="rounded"></div>
+                    <p class="lead mb-4">
+                        En apenas dos años, hemos conseguido hitos que nos enorgullecen y nos impulsan a seguir creciendo.
+                    </p>
+                    
+                    <div class="achievement-item d-flex align-items-start mb-4">
+                        <div class="achievement-icon me-3">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Campeonato Regional</h5>
+                            <p>Organizamos el mayor torneo de TFT de la Comunidad Valenciana con más de 200 participantes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-item d-flex align-items-start mb-4">
+                        <div class="achievement-icon me-3">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Colaboraciones con Riot Games</h5>
+                            <p>Hemos sido reconocidos como comunidad colaboradora para eventos oficiales en España.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-item d-flex align-items-start mb-4">
+                        <div class="achievement-icon me-3">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Expansión Nacional</h5>
+                            <p>De una pequeña comunidad local en Paiporta a más de 500 miembros en toda España.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section class="testimonials-section py-5">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold">Lo Que Dicen Nuestros Miembros</h2>
+                    <div class="d-flex justify-content-center">
+                        <div style="width: 100px; height: 4px; background: linear-gradient(to right, #FF4E50, #4286f4);" class="rounded mb-4 mt-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            Gracias a PaiTFT he mejorado enormemente mi juego. Pasé de hierro a diamante en apenas unos meses con sus guías y torneos semanales.
+                        </p>
+                        <div class="testimonial-author d-flex align-items-center">
+                            <img src="img/testimonials/user1.jpg" alt="Usuario" class="testimonial-avatar">
+                            <div>
+                                <h5 class="mb-0">Roberto Pérez</h5>
+                                <small>Miembro desde 2023</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            Lo que más valoro de PaiTFT es la comunidad. He conocido amigos increíbles con los que comparto mi pasión por el juego todos los días.
+                        </p>
+                        <div class="testimonial-author d-flex align-items-center">
+                            <img src="img/testimonials/user2.jpg" alt="Usuario" class="testimonial-avatar">
+                            <div>
+                                <h5 class="mb-0">Elena Martín</h5>
+                                <small>Miembro desde 2024</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            Los torneos están perfectamente organizados y el ambiente es inmejorable. PaiTFT ha conseguido crear un espacio donde competir sanamente.
+                        </p>
+                        <div class="testimonial-author d-flex align-items-center">
+                            <img src="img/testimonials/user3.jpg" alt="Usuario" class="testimonial-avatar">
+                            <div>
+                                <h5 class="mb-0">David Ruiz</h5>
+                                <small>Miembro desde 2023</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Unirse -->
+    <section class="join-section py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold text-white mb-4">¡Únete a Nuestra Comunidad!</h2>
+                    <p class="lead text-white mb-5">
+                        Forma parte de la mayor asociación de Teamfight Tactics de España. Torneos, eventos, formación y una comunidad increíble te esperan.
+                    </p>
+                    <a href="#" class="btn btn-light btn-lg rounded-pill px-5 py-3 fw-bold" style="color:blue ;">Hazte Miembro</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Logo y descripción -->
+                <div class="col-lg-4">
+                    <div class="mb-4">
+                        <img src="img/logo_blanco.webp" alt="Logo" class="img-fluid mb-3" style="max-height: 70px;">
+                        <p class="text-light">Asociación Paiporta de Teamfight Tactics - Tu comunidad para mejorar y disfrutar del juego.</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white fs-5"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-twitch"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Enlaces del menú -->
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="eventos.html" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-calendar-alt me-2"></i> Eventos
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="noticias.html" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-newspaper me-2"></i> Noticias
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="index.html#aprende" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-chess me-2"></i> Aprende a Jugar
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="index.html#contacto" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-envelope me-2"></i> Contacto
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="about.html" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-users me-2"></i> Sobre Nosotros
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Información legal -->
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Información Legal</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="aviso-legal.html" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-gavel me-2"></i> Aviso Legal
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="privacidad.html" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-lock me-2"></i> Política de Privacidad
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="cookies.html" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-cookie-bite me-2"></i> Política de Cookies
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="terminos.html" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-file-contract me-2"></i> Términos y Condiciones
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-secondary">
+            
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-light mb-0">
+                        &copy; 2025 Asociación Paiporta de Teamfight Tactics. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small text-light mb-0">
+                        <a href="#" class="text-decoration-none text-light" data-bs-toggle="modal" data-bs-target="#cookiesModal">Configurar Cookies</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para configuración de cookies -->
+    <div class="modal fade" id="cookiesModal" tabindex="-1" aria-labelledby="cookiesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cookiesModalLabel">Configuración de Cookies</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Utilizamos cookies para mejorar su experiencia en nuestro sitio web. Puede elegir qué tipos de cookies desea aceptar.</p>
+                    
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" id="cookieNecesarias" checked disabled>
+                        <label class="form-check-label" for="cookieNecesarias">
+                            <strong>Cookies Necesarias</strong> - Estas cookies son imprescindibles para el funcionamiento del sitio.
+                        </label>
+                    </div>
+                    
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" id="cookieRendimiento">
+                        <label class="form-check-label" for="cookieRendimiento">
+                            <strong>Cookies de Rendimiento</strong> - Nos ayudan a entender cómo interactúan los visitantes con el sitio.
+                        </label>
+                    </div>
+                    
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" id="cookiePublicidad">
+                        <label class="form-check-label" for="cookiePublicidad">
+                            <strong>Cookies de Publicidad</strong> - Utilizadas para mostrar anuncios relevantes.
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Guardar Preferencias</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle con Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript personalizado para manejar el overlay -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggler = document.getElementById('menuToggler');
+            const menuOverlay = document.getElementById('menuOverlay');
+            const closeOverlayBtn = document.getElementById('closeOverlayBtn');
+
+            // Abre/cierra el overlay al hacer clic en el botón hamburguesa
+            menuToggler.addEventListener('click', () => {
+                menuOverlay.classList.toggle('open');
+                document.body.classList.toggle('no-scroll');
+            });
+
+            // Cierra el overlay al hacer clic en el ícono X
+            closeOverlayBtn.addEventListener('click', () => {
+                menuOverlay.classList.remove('open');
+                document.body.classList.remove('no-scroll');
+            });
+        });
+    </script>
+</body>
+</html>
