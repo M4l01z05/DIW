@@ -3,7 +3,7 @@
 /* Estilos para el banner principal */
 .about-banner {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), 
-                url('../img/about/fondo-about.jpg') no-repeat center center;
+                url('../img/about/fondo-about.webp') no-repeat center center;
     background-size: cover;
     width: 100%;
     height: 60vh;
